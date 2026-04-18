@@ -1,0 +1,401 @@
+number,sys_updated_by,short_description,state,assignment_group,assigned_to,problem_id,time_worked,group_list,resolved_by,additional_assignee_list,description,sys_domain,reassignment_count,comments_and_work_notes
+INC0009855,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0009856,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0009857,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0009858,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0009859,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0009860,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0009861,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0009862,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0009863,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0009864,Inventory Sync Failure,Stock levels in cart do not match database availability.,PRB0080942
+INC0009865,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0009866,Inventory Sync Failure,Payment issues that are reflected in the invoice,PRB0081530
+INC0009867,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0009868,Inventory Sync Failure,Stock levels in cart do not match database availability.,PRB0080942
+INC0009869,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0009870,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0009871,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0009872,Inventory Sync Failure,Stock levels in cart do not match database availability.,PRB0080942
+INC0009873,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0009874,Inventory Sync Failure,Payment issues that are reflected in the invoice,PRB0081530
+INC0009875,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0009876,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0009877,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0009878,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0009879,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0009880,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0009881,Inventory Sync Failure,Payment issues that are reflected in the invoice,PRB0081530
+INC0009882,Inventory Sync Failure,Stock levels in cart do not match database availability.,PRB0080942
+INC0009883,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0009884,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0009885,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0009886,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0009887,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0009888,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0009889,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0009890,Inventory Sync Failure,Payment issues that are reflected in the invoice,PRB0081530
+INC0009891,Inventory Sync Failure,Stock levels in cart do not match database availability.,PRB0080942
+INC0009892,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0009893,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0009894,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0009895,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0009896,Inventory Sync Failure,Payment issues that are reflected in the invoice,PRB0081530
+INC0009897,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0009898,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0009899,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0009900,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0009901,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0009902,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0009903,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0009904,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0009905,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0009906,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0009907,Inventory Sync Failure,Stock levels in cart do not match database availability.,PRB0080942
+INC0009908,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0009909,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0009910,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0009911,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0009912,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0009913,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0009914,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0009915,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0009916,Inventory Sync Failure,Payment issues that are reflected in the invoice,PRB0081530
+INC0009917,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0009918,Inventory Sync Failure,Stock levels in cart do not match database availability.,PRB0080942
+INC0009919,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0009920,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0009921,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0009922,Inventory Sync Failure,Payment issues that are reflected in the invoice,PRB0081530
+INC0009923,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0009924,Inventory Sync Failure,Payment issues that are reflected in the invoice,PRB0081530
+INC0009925,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0009926,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0009927,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0009928,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0009929,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0009930,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0009931,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0009932,Inventory Sync Failure,Payment issues that are reflected in the invoice,PRB0081530
+INC0009933,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0009934,Inventory Sync Failure,Payment issues that are reflected in the invoice,PRB0081530
+INC0009935,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0009936,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0009937,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0009938,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0009939,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0009940,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0009941,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0009942,Inventory Sync Failure,Payment issues that are reflected in the invoice,PRB0081530
+INC0009943,Inventory Sync Failure,Payment issues that are reflected in the invoice,PRB0081530
+INC0009944,Inventory Sync Failure,Payment issues that are reflected in the invoice,PRB0081530
+INC0009945,Inventory Sync Failure,Stock levels in cart do not match database availability.,PRB0080942
+INC0009946,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0009947,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0009948,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0009949,Inventory Sync Failure,Payment issues that are reflected in the invoice,PRB0081530
+INC0009950,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0009951,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0009952,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0009953,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0009954,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0009955,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0009956,Inventory Sync Failure,Stock levels in cart do not match database availability.,PRB0080942
+INC0009957,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0009958,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0009959,Inventory Sync Failure,Payment issues that are reflected in the invoice,PRB0081530
+INC0009960,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0009961,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0009962,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0009963,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0009964,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0009965,Inventory Sync Failure,Payment issues that are reflected in the invoice,PRB0081530
+INC0009966,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0009967,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0009968,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0009969,Inventory Sync Failure,Payment issues that are reflected in the invoice,PRB0081530
+INC0009970,Inventory Sync Failure,Stock levels in cart do not match database availability.,PRB0080942
+INC0009971,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0009972,Inventory Sync Failure,Stock levels in cart do not match database availability.,PRB0080942
+INC0009973,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0009974,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0009975,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0009976,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0009977,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0009978,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0009979,Inventory Sync Failure,Payment issues that are reflected in the invoice,PRB0081530
+INC0009980,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0009981,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0009982,Inventory Sync Failure,Payment issues that are reflected in the invoice,PRB0081530
+INC0009983,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0009984,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0009985,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0009986,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0009987,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0009988,Inventory Sync Failure,Stock levels in cart do not match database availability.,PRB0080942
+INC0009989,Inventory Sync Failure,Payment issues that are reflected in the invoice,PRB0081530
+INC0009990,Inventory Sync Failure,Payment issues that are reflected in the invoice,PRB0081530
+INC0009991,Inventory Sync Failure,Stock levels in cart do not match database availability.,PRB0080942
+INC0009992,Inventory Sync Failure,Stock levels in cart do not match database availability.,PRB0080942
+INC0009993,Inventory Sync Failure,Payment issues that are reflected in the invoice,PRB0081530
+INC0009994,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0009995,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0009996,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0009997,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0009998,Inventory Sync Failure,Stock levels in cart do not match database availability.,PRB0080942
+INC0009999,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0010000,Inventory Sync Failure,Stock levels in cart do not match database availability.,PRB0080942
+INC0010001,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010002,Inventory Sync Failure,Payment issues that are reflected in the invoice,PRB0081530
+INC0010003,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0010004,Inventory Sync Failure,Payment issues that are reflected in the invoice,PRB0081530
+INC0010005,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010006,Inventory Sync Failure,Stock levels in cart do not match database availability.,PRB0080942
+INC0010007,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010008,Inventory Sync Failure,Stock levels in cart do not match database availability.,PRB0080942
+INC0010009,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0010010,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0010011,Inventory Sync Failure,Stock levels in cart do not match database availability.,PRB0080942
+INC0010012,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0010013,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010014,Inventory Sync Failure,Payment issues that are reflected in the invoice,PRB0081530
+INC0010015,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010016,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0010017,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010018,Inventory Sync Failure,Stock levels in cart do not match database availability.,PRB0080942
+INC0010019,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010020,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0010021,Inventory Sync Failure,Payment issues that are reflected in the invoice,PRB0081530
+INC0010022,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010023,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010024,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010025,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010026,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0010027,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0010028,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010029,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0010030,Inventory Sync Failure,Stock levels in cart do not match database availability.,PRB0080942
+INC0010031,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010032,Inventory Sync Failure,Payment issues that are reflected in the invoice,PRB0081530
+INC0010033,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0010034,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0010035,Inventory Sync Failure,Payment issues that are reflected in the invoice,PRB0081530
+INC0010036,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010037,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010038,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010039,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0010040,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010041,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0010042,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010043,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010044,Inventory Sync Failure,Payment issues that are reflected in the invoice,PRB0081530
+INC0010045,Inventory Sync Failure,Payment issues that are reflected in the invoice,PRB0081530
+INC0010046,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010047,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0010048,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010049,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010050,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0010051,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010052,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010053,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0010054,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010055,Inventory Sync Failure,Stock levels in cart do not match database availability.,PRB0080942
+INC0010056,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010057,Inventory Sync Failure,Payment issues that are reflected in the invoice,PRB0081530
+INC0010058,Inventory Sync Failure,Payment issues that are reflected in the invoice,PRB0081530
+INC0010059,Inventory Sync Failure,Payment issues that are reflected in the invoice,PRB0081530
+INC0010060,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010061,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010062,Inventory Sync Failure,Stock levels in cart do not match database availability.,PRB0080942
+INC0010063,Inventory Sync Failure,Payment issues that are reflected in the invoice,PRB0081530
+INC0010064,Inventory Sync Failure,Stock levels in cart do not match database availability.,PRB0080942
+INC0010065,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0010066,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0010067,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010068,Inventory Sync Failure,Stock levels in cart do not match database availability.,PRB0080942
+INC0010069,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010070,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0010071,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010072,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0010073,Inventory Sync Failure,Payment issues that are reflected in the invoice,PRB0081530
+INC0010074,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010075,Inventory Sync Failure,Payment issues that are reflected in the invoice,PRB0081530
+INC0010076,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010077,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010078,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0010079,Inventory Sync Failure,Stock levels in cart do not match database availability.,PRB0080942
+INC0010080,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0010081,Inventory Sync Failure,Payment issues that are reflected in the invoice,PRB0081530
+INC0010082,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010083,Inventory Sync Failure,Payment issues that are reflected in the invoice,PRB0081530
+INC0010084,Inventory Sync Failure,Payment issues that are reflected in the invoice,PRB0081530
+INC0010085,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010086,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010087,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010088,Inventory Sync Failure,Stock levels in cart do not match database availability.,PRB0080942
+INC0010089,Inventory Sync Failure,Stock levels in cart do not match database availability.,PRB0080942
+INC0010090,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010091,Inventory Sync Failure,Stock levels in cart do not match database availability.,PRB0080942
+INC0010092,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0010093,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010094,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010095,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0010096,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010097,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0010098,Inventory Sync Failure,Stock levels in cart do not match database availability.,PRB0080942
+INC0010099,Inventory Sync Failure,Payment issues that are reflected in the invoice,PRB0081530
+INC0010100,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010101,Inventory Sync Failure,Stock levels in cart do not match database availability.,PRB0080942
+INC0010102,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010103,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0010104,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0010105,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010106,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010107,Inventory Sync Failure,Stock levels in cart do not match database availability.,PRB0080942
+INC0010108,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010109,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0010110,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010111,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010112,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010113,Inventory Sync Failure,Payment issues that are reflected in the invoice,PRB0081530
+INC0010114,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010115,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010116,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010117,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010118,Inventory Sync Failure,Stock levels in cart do not match database availability.,PRB0080942
+INC0010119,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010120,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010121,Inventory Sync Failure,Payment issues that are reflected in the invoice,PRB0081530
+INC0010122,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010123,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0010124,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010125,Inventory Sync Failure,Payment issues that are reflected in the invoice,PRB0081530
+INC0010126,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010127,Inventory Sync Failure,Payment issues that are reflected in the invoice,PRB0081530
+INC0010128,Inventory Sync Failure,Payment issues that are reflected in the invoice,PRB0081530
+INC0010129,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010130,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010131,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0010132,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0010133,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0010134,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010135,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0010136,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010137,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010138,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010139,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010140,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010141,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0010142,Inventory Sync Failure,Payment issues that are reflected in the invoice,PRB0081530
+INC0010143,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010144,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010145,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0010146,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010147,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0010148,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010149,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010150,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010151,Inventory Sync Failure,Stock levels in cart do not match database availability.,PRB0080942
+INC0010152,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0010153,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010154,Inventory Sync Failure,Stock levels in cart do not match database availability.,PRB0080942
+INC0010155,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010156,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0010157,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0010158,Inventory Sync Failure,Payment issues that are reflected in the invoice,PRB0081530
+INC0010159,Inventory Sync Failure,Stock levels in cart do not match database availability.,PRB0080942
+INC0010160,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010161,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0010162,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010163,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0010164,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010165,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0010166,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010167,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010168,Inventory Sync Failure,Payment issues that are reflected in the invoice,PRB0081530
+INC0010169,Inventory Sync Failure,Payment issues that are reflected in the invoice,PRB0081530
+INC0010170,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010171,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010172,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010173,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010174,Inventory Sync Failure,Stock levels in cart do not match database availability.,PRB0080942
+INC0010175,Inventory Sync Failure,Stock levels in cart do not match database availability.,PRB0080942
+INC0010176,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010177,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0010178,Inventory Sync Failure,Payment issues that are reflected in the invoice,PRB0081530
+INC0010179,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0010180,Inventory Sync Failure,Stock levels in cart do not match database availability.,PRB0080942
+INC0010181,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0010182,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010183,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0010184,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010185,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010186,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010187,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0010188,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0010189,Inventory Sync Failure,Stock levels in cart do not match database availability.,PRB0080942
+INC0010190,Inventory Sync Failure,Stock levels in cart do not match database availability.,PRB0080942
+INC0010191,Inventory Sync Failure,Payment issues that are reflected in the invoice,PRB0081530
+INC0010192,Inventory Sync Failure,Payment issues that are reflected in the invoice,PRB0081530
+INC0010193,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0010194,Inventory Sync Failure,Stock levels in cart do not match database availability.,PRB0080942
+INC0010195,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010196,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010197,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010198,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010199,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010200,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0010201,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0010202,Inventory Sync Failure,Payment issues that are reflected in the invoice,PRB0081530
+INC0010203,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010204,Inventory Sync Failure,Stock levels in cart do not match database availability.,PRB0080942
+INC0010205,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0010206,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0010207,Inventory Sync Failure,Payment issues that are reflected in the invoice,PRB0081530
+INC0010208,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0010209,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010210,Inventory Sync Failure,Payment issues that are reflected in the invoice,PRB0081530
+INC0010211,Inventory Sync Failure,Stock levels in cart do not match database availability.,PRB0080942
+INC0010212,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010213,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0010214,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0010215,Inventory Sync Failure,Payment issues that are reflected in the invoice,PRB0081530
+INC0010216,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010217,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0010218,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010219,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010220,Inventory Sync Failure,Payment issues that are reflected in the invoice,PRB0081530
+INC0010221,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010222,Inventory Sync Failure,Stock levels in cart do not match database availability.,PRB0080942
+INC0010223,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010224,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010225,Inventory Sync Failure,Stock levels in cart do not match database availability.,PRB0080942
+INC0010226,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010227,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010228,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010229,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010230,Inventory Sync Failure,Stock levels in cart do not match database availability.,PRB0080942
+INC0010231,Inventory Sync Failure,Stock levels in cart do not match database availability.,PRB0080942
+INC0010232,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0010233,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010234,Inventory Sync Failure,Stock levels in cart do not match database availability.,PRB0080942
+INC0010235,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010236,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010237,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010238,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010239,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0010240,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010241,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010242,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0010243,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010244,Invalid VAT Calculation,VAT applying incorrectly to cross-border category items.,PRB0080942
+INC0010245,Inventory Sync Failure,Payment issues that are reflected in the invoice,PRB0081530
+INC0010246,Inventory Sync Failure,Payment issues that are reflected in the invoice,PRB0081530
+INC0010247,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010248,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010249,Inventory Sync Failure,Payment issues that are reflected in the invoice,PRB0081530
+INC0010250,Inventory Sync Failure,Payment issues that are reflected in the invoice,PRB0081530
+INC0010251,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010252,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
+INC0010253,Inventory Sync Failure,Payment issues that are reflected in the invoice,PRB0081530
+INC0010254,Payment Gateway Timeout,User unable to complete checkout; 408 Request Timeout at payment step.,PRB0081193
