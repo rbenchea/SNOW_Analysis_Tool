@@ -8,7 +8,7 @@ def generate_metrics_csv(filename="metric_instance.csv", num_rows=400):
     definition = "Incident Assignment Group"
     start_id = 9855
     
-    incident_ids = [f"INC{12220000 + i}" for i in range(start_id, start_id + num_rows)]
+    incident_ids = [f"Incident: INC{12220000 + i}" for i in range(start_id, start_id + num_rows)]
     
     def get_random_date(year, month):
         start_date = datetime(year, month, 1)
@@ -18,7 +18,7 @@ def generate_metrics_csv(filename="metric_instance.csv", num_rows=400):
 
     with open(filename, mode='w', newline='') as file:
         writer = csv.writer(file)
-        writer.writerow(["sys_created_on", "definition", "id", "value", "start", "end", 
+        writer.writerow(["sys_created_on", "definition", "id", "value", "metric_start", "metric_end", 
                          "duration", "calculation_complete"])
         
         for inc_id in incident_ids:
@@ -43,7 +43,7 @@ def generate_metrics_csv(filename="metric_instance.csv", num_rows=400):
             else:
                 # If there is no end date, duration is typically 0 or empty 
                 # (adjust based on your system requirements)
-                duration = 0
+                duration = None
 
             # 3. Logic for Calculation Complete
             calculation_complete = "TRUE" if end_dt else "FALSE"
