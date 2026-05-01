@@ -2,23 +2,37 @@
 
 ## SNOW Analysis Tool
 
-This project provides a data analysis tool for ServiceNow (SNOW) incident management data. It processes CSV files containing incidents, metric instances, and problems to generate insights, categorizations, and visualizations.
+A data analysis tool for ServiceNow (SNOW) incident management. Process CSV files containing incidents to generate insights, categorizations, and visualizations. Access via CLI or web interface.
 
 ### Features
 
-- **Data Loading**: Loads incident, metric, and problem data from CSV files with encoding fallback support.
-- **Issue Categorization**: Automatically categorizes incidents into types such as CHECKOUT ISSUES, VAT ISSUES, INVOICE/BILLING ISSUES, STOCK ISSUES, and UNCATEGORIZED.
-- **Analysis**: Provides summaries including total incidents, unique problems, issue trends, and top applications affected.
-- **Visualization**: Generates a monochromatic blue pie chart showing incident distribution by issue type.
-- **Output**: Saves visualizations to an output directory and prints detailed analysis results to the console.
+- **Data Loading**: Loads incident data from CSV files with encoding fallback support (UTF-8, Latin-1, CP1252).
+- **Issue Categorization**: Automatically categorizes incidents into:
+  - CHECKOUT ISSUES
+  - STOCK SEARCH ISSUES
+  - VAT ISSUES
+  - PAYMENT ISSUES
+  - STOCK/INVENTORY ISSUES
+  - CART ISSUES
+  - INVOICE ISSUES
+  - UNCATEGORIZED
+- **Problem ID Aggregation**: Groups incidents by Problem ID and counts associated tickets.
+- **Analysis Summary**: Provides total incidents, tickets with problems, and unique issue type counts.
+- **Visualizations**: 
+  - Pie chart showing incident distribution by category
+  - Table image displaying Problem IDs and incident counts
+- **Web Interface**: FastAPI-based web UI for easy file upload and analysis.
+- **Output**: Saves visualizations to the output directory.
 
 ### Requirements
 
-- Python 3.x
+- Python 3.8+
 - Dependencies listed in `requirements.txt`:
   - pandas>=1.3.0
   - numpy>=1.21.0
   - matplotlib>=3.4.0
+  - fastapi>=0.95.0
+  - uvicorn>=0.21.0
 
 ### Installation
 
@@ -40,58 +54,113 @@ This project provides a data analysis tool for ServiceNow (SNOW) incident manage
 
 ### Usage
 
-Run the analysis script with default CSV files:
+### Option 1: Command Line (CLI)
+
+Run the analysis script with default CSV file in the current directory:
 
 ```
 python data_analysis.py
 ```
 
-Or specify custom file paths:
+The script expects `incident.csv` in the current working directory.
+
+### Option 2: Web Interface (FastAPI)
+
+Start the web server:
 
 ```
-python data_analysis.py --incident path/to/incident.csv --metric path/to/metric_instance.csv --problem path/to/problems.csv --output-dir path/to/output
+python fastapi_app.py
 ```
 
-### Arguments
+Then open your browser to:
+```
+http://localhost:8000
+```
 
-- `--incident`: Path to the incident CSV file (default: `incident.csv`)
-- `--metric`: Path to the metric instance CSV file (default: `metric_instance.csv`)
-- `--problem`: Path to the problems CSV file (default: `problems.csv`)
-- `--output-dir`: Directory to save output visualizations (default: `output`)
+**Features:**
+- Upload incident CSV files directly via the web form
+- Or specify file paths on your machine (defaults to `~/Downloads/incident.csv`)
+- View generated visualizations in the browser
+- Download visualization images
 
-### Output
+View a gallery of all generated visualizations:
+```
+http://localhost:8000/gallery
+```
 
-- Console output with analysis summary, top issue types, and statistics.
-- Pie chart visualization saved as `03_issues_distribution.png` in the output directory.
+## Input Data Format
 
-### Data Files
+### incident.csv
 
-- `incident.csv`: Contains incident data with columns like number, short_description, description, state, assignment_group.
-- `metric_instance.csv`: Contains metric instances linked to incidents.
-- `problems.csv`: Contains problem records.
+Required columns:
+- `number`: Incident number (will be normalized to uppercase)
+- `short_description`: Brief description of the incident
+- `description`: Full incident description
+- `problem_id`: Associated Problem ID (format: PRB followed by numbers)
 
-### Example Output
+Example:
+```
+number,short_description,description,problem_id
+INC0001,Checkout timeout,408 request timeout during checkout,PRB001
+INC0002,Stock sync error,Inventory levels not syncing,PRB002
+```
+
+## Output
+
+### Console Output (CLI)
 
 ```
-============================================================
-SNOW ANALYSIS SUMMARY
-============================================================
-Total Incidents In Metrics     : 150
-Total Unique Incidents         : 120
-Tickets With Problem           : 45
-Percentage With Problem        : 30.0%
-Unique Applications            : 10
-Total Unique Problems          : 15
-Unique Issue Types             : 5
+==================================================
+SNOW INCIDENT ANALYSIS SUMMARY
+==================================================
+Total Incidents        : 150
+Tickets With Problem   : 45
+Unique Issue Types     : 5
 
-TOP ISSUE TYPES:
-issue_type  incident_count
-CHECKOUT ISSUES    50
-UNCATEGORIZED     40
-STOCK ISSUES      30
+TOP PROBLEM ASSOCIATIONS:
+Problem ID  Description              Incident Count
+PRB001      Checkout timeout         12
+PRB002      Stock sync error         8
 ...
 ```
 
-### Contributing
+### Generated Files
+
+- `issues_distribution.png`: Pie chart of incident distribution by category
+- `problem_report_table.png`: Table showing Problem IDs and associated incident counts
+
+## Project Structure
+
+```
+proiect_final_wantsome/
+├── data_analysis.py           # Core analysis logic
+├── fastapi_app.py             # Web interface
+├── requirements.txt           # Python dependencies
+├── README.md                  # This file
+├── tests/
+│   └── test_data_analysis.py  # Unit tests
+└── output/                    # Generated visualizations
+```
+
+## Testing
+
+Run unit tests using pytest:
+
+```bash
+pytest tests/test_data_analysis.py -v
+```
+
+Tests cover:
+- Text normalization and German character handling
+- Issue categorization logic
+- CSV loading with number column normalization
+- Problem ID aggregation and grouping
+- Visualization file generation
+
+## Contributing
 
 Feel free to contribute by submitting issues or pull requests.
+
+## License
+
+[Add your license information here]
