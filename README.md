@@ -1,4 +1,3 @@
-# MyGitProject-
 
 ## SNOW Analysis Tool
 
