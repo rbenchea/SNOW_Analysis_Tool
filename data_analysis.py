@@ -1,6 +1,5 @@
-import argparse
 from pathlib import Path
-from typing import List, Optional, Tuple
+from typing import List, Tuple
 import numpy as np
 import pandas as pd
 import matplotlib
@@ -78,15 +77,15 @@ def analyze_data(incidents: pd.DataFrame) -> Tuple:
 
     issue_trends = incidents.groupby("issue_type").size().reset_index(name="count").sort_values("count", ascending=False)
     
-    # Logic Change: Group by Problem ID to count associated incidents
-    # This specifically checks how many times the same PRB number appears in the column
+    # Enhanced: Group by Problem ID and capture assignment_group, short_description (title), and count
     problem_report = incidents[incidents["problem_id_mapped"].notna()].groupby("problem_id_mapped").agg({
-        "short_description": "first",  # Take the first description found for this Problem
-        "problem_id": "count"          # Count how many rows have this Problem ID
+        "assignment_group": "first",      # Take first assignment group
+        "short_description": "first",     # Take first title/description
+        "problem_id": "count"             # Count incidents
     }).reset_index()
     
-    problem_report.columns = ["Problem ID", "Description", "Incident Count"]
-    problem_report = problem_report.sort_values("Incident Count", ascending=False)
+    problem_report.columns = ["Problem ID", "Assignment Group", "Title", "Total SNOW Tickets"]
+    problem_report = problem_report.sort_values("Total SNOW Tickets", ascending=False)
     
     return incidents, summary, issue_trends, problem_report
 
@@ -96,33 +95,36 @@ def create_problem_table_img(output_dir: Path, problem_report: pd.DataFrame):
         return
     
     # Adjust figure size based on amount of data
-    fig_height = max(2, len(problem_report) * 0.5 + 1)
-    fig, ax = plt.subplots(figsize=(14, fig_height))
+    fig_height = max(3, len(problem_report) * 0.6 + 1.5)
+    fig, ax = plt.subplots(figsize=(18, fig_height))
     ax.axis('off')
     
-    # Create the table
+    # Create the table with 4 columns
     tbl = ax.table(
         cellText=problem_report.values,
         colLabels=problem_report.columns,
         cellLoc='left',
         loc='center',
-        colWidths=[0.15, 0.70, 0.15],
-        colColours=["#2F5597"] * 3
+        colWidths=[0.12, 0.18, 0.55, 0.15],
+        colColours=["#2F5597"] * 4
     )
     
     # Styling
     tbl.auto_set_font_size(False)
-    tbl.set_fontsize(10)
-    tbl.scale(1, 1.5)
+    tbl.set_fontsize(9)
+    tbl.scale(1, 1.8)
     
-    # Style header
+    # Style header and cells
     for (row, col), cell in tbl.get_celld().items():
         if row == 0:
             cell.get_text().set_color('white')
             cell.get_text().set_weight('bold')
         cell.set_edgecolor('#D9D9D9')
+        # Enable text wrapping for title column
+        if col == 2:
+            cell.set_text_props(wrap=True)
 
-    plt.title("Problem IDs and Associated Incident Counts", fontsize=16, pad=20, weight='bold')
+    plt.title("Problem IDs and Associated Incident Details", fontsize=16, pad=20, weight='bold')
     
     output_dir.mkdir(parents=True, exist_ok=True)
     table_path = output_dir / "problem_report_table.png"
@@ -161,7 +163,7 @@ def main():
         print("[ERROR] No data found in incident.csv")
         return
 
-    analyzed_df, summary, issue_trends, problem_report = analyze_data(incidents)
+    _, _, issue_trends, problem_report = analyze_data(incidents)
     
     create_visualizations(output_dir, issue_trends)
     create_problem_table_img(output_dir, problem_report)
@@ -170,8 +172,6 @@ def main():
     print("\n" + "=" * 50)
     print("SNOW INCIDENT ANALYSIS SUMMARY")
     print("=" * 50)
-    for k, v in summary.items():
-        print(f"{k.replace('_', ' ').title():<25}: {v}")
     
     print("\nTOP PROBLEM ASSOCIATIONS:")
     print(problem_report.to_string(index=False))
