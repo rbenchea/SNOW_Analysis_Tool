@@ -10,7 +10,6 @@ try:
     # Normal package import (works when imported as a package)
     from .data_analysis import (
         load_incidents,
-        load_problems,
         load_metric_instance,
         analyze_data,
         categorize_issue,
@@ -30,7 +29,6 @@ except Exception:
 
     # Re-export expected symbols from the loaded module
     load_incidents = _mod.load_incidents
-    load_problems = _mod.load_problems
     load_metric_instance = _mod.load_metric_instance
     analyze_data = _mod.analyze_data
     categorize_issue = _mod.categorize_issue
@@ -40,7 +38,6 @@ except Exception:
 
 __all__ = [
     "load_incidents",
-    "load_problems",
     "load_metric_instance",
     "analyze_data",
     "categorize_issue",
