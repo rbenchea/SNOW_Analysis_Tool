@@ -64,17 +64,19 @@ python "generate moc data/generate_random_moc_metrics.py"
 ```
 Creates `output/metric_instance.csv` with 400 sample metric records.
 
-#### Step 2: Generate Incidents
+#### Step 2: Generate Problems
+```bash
+python "generate moc data/generate_random_moc_problem.py"
+```
+Creates `output/problems.csv` with problem records linked to incidents. Requires both `incident.csv` and `metric_instance.csv`.
+
+#### Step 3: Generate Incidents
 ```bash
 python "generate moc data/genrate_moc_data_incident.py"
 ```
 Creates `output/incident.csv` with incidents linked to the metrics. Requires `metric_instance.csv` from Step 1.
 
-#### Step 3: Generate Problems
-```bash
-python "generate moc data/generate_random_moc_problem.py"
-```
-Creates `output/problems.csv` with problem records linked to incidents. Requires both `incident.csv` and `metric_instance.csv`.
+
 
 **Example Complete Setup:**
 ```bash

@@ -9,14 +9,14 @@ import shutil
 import tempfile
 from pathlib import Path
 from typing import Optional
+import sys
 
 import uvicorn
 from fastapi import FastAPI, File, Form, UploadFile
 from fastapi.responses import HTMLResponse
 from fastapi.staticfiles import StaticFiles
 
-# Import from data_analysis module (go up one level to parent directory)
-import sys
+# Import from data_analysis package (parent directory)
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from data_analysis import (
@@ -139,7 +139,10 @@ async def run_analysis(
             if not incidents.empty:
                 _, summary, issue_trends, problem_report = analyze_data(incidents, problems, metrics)
                 
-                create_visualizations(OUTPUT_DIR, issue_trends)
+                # Get total tickets from metrics
+                total_tickets = len(metrics) if not metrics.empty else 0
+                
+                create_visualizations(OUTPUT_DIR, issue_trends, total_tickets)
                 create_problem_table_img(OUTPUT_DIR, problem_report)
             else:
                 raise ValueError("Incident file was empty or could not be read.")

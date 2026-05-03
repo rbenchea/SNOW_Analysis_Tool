@@ -168,14 +168,15 @@ def create_problem_table_img(output_dir: Path, problem_report: pd.DataFrame):
     plt.close()
     print(f"[INFO] ✓ Problem table saved to: {table_path}")
 
-def create_visualizations(output_dir: Path, issue_trends: pd.DataFrame):
+def create_visualizations(output_dir: Path, issue_trends: pd.DataFrame, total_tickets: int = 0):
     if issue_trends.empty: return
     output_dir.mkdir(parents=True, exist_ok=True)
     
     plt.figure(figsize=(10, 8))
     colors = plt.cm.Blues(np.linspace(0.8, 0.4, len(issue_trends)))
     
-    plt.pie(
+    # Create donut chart
+    wedges, texts, autotexts = plt.pie(
         issue_trends["count"], 
         labels=issue_trends["issue_type"], 
         autopct='%1.1f%%', 
@@ -183,7 +184,12 @@ def create_visualizations(output_dir: Path, issue_trends: pd.DataFrame):
         colors=colors,
         wedgeprops={'edgecolor': 'white', 'linewidth': 1}
     )
-    plt.title("Incident Distribution by Category", fontsize=14)
+    
+    # Create donut hole
+    centre_circle = plt.Circle((0, 0), 0.70, fc='white')
+    plt.gca().add_artist(centre_circle)
+    
+    plt.title(f"Incident Distribution by Category | Total Tickets: {total_tickets}", fontsize=14)
     
     graph_path = output_dir / "issues_distribution.png"
     plt.savefig(str(graph_path), dpi=300, bbox_inches="tight")
@@ -206,17 +212,20 @@ def main():
 
     _, _, issue_trends, problem_report = analyze_data(incidents, problems, metrics)
     
-    create_visualizations(output_dir, issue_trends)
+    # Get total tickets from metrics
+    total_tickets = len(metrics) if not metrics.empty else 0
+    
+    create_visualizations(output_dir, issue_trends, total_tickets)
     create_problem_table_img(output_dir, problem_report)
 
     # Print Summary Results
     print("\n" + "=" * 50)
     print("SNOW INCIDENT ANALYSIS SUMMARY")
     print("=" * 50)
+    print(f"[INFO] Total tickets (metrics): {total_tickets}")
+    print(f"[INFO] Total incidents: {len(incidents)}")
     if not problems.empty:
         print(f"[INFO] Total problems loaded: {len(problems)}")
-    if not metrics.empty:
-        print(f"[INFO] Total metric instances loaded: {len(metrics)}")
     
     print("\nTOP PROBLEM ASSOCIATIONS:")
     print(problem_report.to_string(index=False))

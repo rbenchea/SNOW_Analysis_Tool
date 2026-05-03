@@ -6,7 +6,7 @@ import pandas as pd
 from pathlib import Path
 import argparse
 
-# Importing from your provided data_analysis.py structure
+# Import from the provided data_analysis.py structure
 from data_analysis import load_incidents, analyze_data
 
 

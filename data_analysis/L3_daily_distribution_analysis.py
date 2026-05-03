@@ -2,21 +2,13 @@ from __future__ import annotations
 import argparse
 from pathlib import Path
 import pandas as pd
+import matplotlib.pyplot as plt
 
-L3_GROUP = "EU Support_L3"
-L4_GROUP = "EU Support_L4"
-
-COLUMN_SPECS = [
-    ("Date", "Date", 12, "Analysis day from metric_instance.csv."),
-    ("New Daily Tickets in L3 queue", "New Daily SNOWs\n(IN L3 queue)", 10, "New Daily SNOWS = new incidents that arrived IN L3 queue"),
-    ("Resolved by L3", "Resolved by L3\n(EXIT from L3 queue)", 9, "Resolved by L3 = resolved incidents by L3 from the Current L3 queue OR New Daily SNOWS"),
-    ("Reassignments", "Reassignments", 7, "Reassignments = the no of tickets were at least once previously assigned to EU Support_L3  SNOW group."),
-    ("Distributed to L2", "From L3 To L2\n(EXIT from L3 queue)", 6, "From L3 To L2 = tickets that EXIT L3 and were routed to L2 by L3 from the Current L3 queue OR New Daily SNOWS"),
-    ("Distributed to L4", "From L3 To L4\n(EXIT from L3 queue)", 6, "From L3 To L4 = tickets that EXIT L3 and were routed to L4 by L3 from the Current L3 queue OR New Daily SNOWS"),
-    ("Third parties", "3rdParty\n(EXIT from L3 queue)", 8, "3rd Party = tickets that EXIT L3 and were routed to 3rd Party by L3 from the Current L3 queue OR New Daily SNOWS"),
-    ("Existing L3 queue", "Current L3 queue", 9, "Open tickets currently in EU Support_L3 from incident.csv with an assignee (excluding closed/resolved/canceled)."),
-    ("Total L3 queue", "Total L3 queue", 10, "Total L3 queue = New Daily SNOWs + Resolved by L3 + From L3 To L2 + From L3 To L4 + 3rdParty + Current L3 queue"),
-]
+# Adjusted Search Strings based on your incident.csv snippet
+# Using substrings ensures "L3 Support" is captured even if the script looks for "L3"
+L2_SEARCH = "L2"
+L3_SEARCH = "L3"
+L4_SEARCH = "L4"
 
 def _parse_datetime_series(series: pd.Series) -> pd.Series:
     s = series.astype(str).str.strip()
@@ -24,37 +16,19 @@ def _parse_datetime_series(series: pd.Series) -> pd.Series:
     fallback = pd.to_datetime(s, format="mixed", errors="coerce")
     return dt.fillna(fallback)
 
-def _format_png_date_label(value: object) -> str:
-    dt = pd.to_datetime(value, errors="coerce")
-    if pd.isna(dt): return str(value)
-    date_text = dt.date().isoformat()
-    return f"WEEKEND\n{date_text}" if dt.dayofweek in (5, 6) else date_text
-
-def _prepare_png_display(daily_df: pd.DataFrame) -> pd.DataFrame:
-    display = daily_df.copy().reset_index(drop=True)
-    display["Date"] = display["Date"].apply(_format_png_date_label)
-    return display
-
 def load_metric_instance(path: Path) -> pd.DataFrame:
-    metrics = pd.read_csv(path, header=None)
-    col_names = ["metric_timestamp", "metric_type", "id_field", "value", "metric_start", "metric_end", "duration", "complete"]
+    if not path.exists(): return pd.DataFrame()
+    df = pd.read_csv(path)
+    df.columns = [c.strip().lower() for c in df.columns]
     
-    # Corrected: metrics.shape gets the column count
-    metrics.columns = col_names[:metrics.shape]
-
-    header_mask = (metrics["id_field"].astype(str).str.lower().str.contains("id") | 
-                   metrics["metric_start"].astype(str).str.lower().str.contains("start"))
-    metrics = metrics.loc[~header_mask].copy()
-
-    metrics["id_field"] = metrics["id_field"].astype(str).str.strip()
-    metrics["incident_number"] = metrics["id_field"].str.extract(r"(?i)(INC\d+)", expand=False).str.upper()
-    metrics["value"] = metrics["value"].astype(str).fillna("").str.strip()
-    metrics["start_dt"] = _parse_datetime_series(metrics["metric_start"])
-    metrics["start_date"] = metrics["start_dt"].dt.date
-    
-    return metrics[metrics["incident_number"].notna()].copy()
+    # Requirement 1: Date taken from sys_created_on
+    if "sys_created_on" in df.columns:
+        df["dt"] = _parse_datetime_series(df["sys_created_on"])
+        df["date_only"] = df["dt"].dt.date
+    return df
 
 def load_incidents(path: Path) -> pd.DataFrame:
+    if not path.exists(): return pd.DataFrame()
     df = pd.DataFrame()
     for enc in ["utf-8", "latin-1", "cp1252"]:
         try:
@@ -62,90 +36,93 @@ def load_incidents(path: Path) -> pd.DataFrame:
             break
         except: continue
     
-    if df.empty: return df
-
     df.columns = [str(c).strip().lower() for c in df.columns]
-    
-    rename_map = {}
-    if "number" in df.columns: rename_map["number"] = "number"
-    if "assignment_group" in df.columns: rename_map["assignment_group"] = "assignment_group"
-    if "state" in df.columns: rename_map["state"] = "state"
-    
-    assignee_key = next((k for k in ["assigned_to", "assignee", "u_assigned_to"] if k in df.columns), None)
-    if assignee_key: rename_map[assignee_key] = "assignee"
-        
-    df = df.rename(columns=rename_map)
-    df["number"] = df["number"].astype(str).str.upper().str.strip()
-    df["assignee"] = df["assignee"].fillna("").astype(str).str.strip()
     return df
 
-def analyze_support_daily_distribution(metrics, incidents):
-    dates = sorted(metrics["start_date"].dropna().unique())
-    l3_rows = metrics[metrics["value"].str.contains(L3_GROUP, case=False, na=False)].copy()
+def analyze_data(metrics, incidents):
+    if metrics.empty or incidents.empty:
+        return pd.DataFrame()
 
-    # Calculate New Daily Tickets entering L3
-    new_daily = l3_rows.groupby("start_date").size().reindex(dates, fill_value=0)
+    dates = sorted(metrics["date_only"].dropna().unique())
+    results = []
     
-    # Calculate daily reassignments (Incidents that hit L3 more than once)
-    reassignment_counts = l3_rows.groupby(["start_date", "incident_number"]).size()
-    daily_reassignments = reassignment_counts[reassignment_counts > 1].groupby(level=0).size().reindex(dates, fill_value=0)
+    # Requirement 3: Total existing tickets (len of 'number' column)
+    total_existing = len(incidents["number"]) if "number" in incidents.columns else 0
 
-    # Current snapshot of open L3 tickets
-    active_mask = (incidents["assignment_group"].str.contains(L3_GROUP, case=False, na=False) & 
-                   ~incidents["state"].str.contains("closed|resolved", case=False, na=False))
-    baseline = incidents[active_mask]["number"].nunique()
+    # Requirement 4-7: Group counts using flexible substring matching
+    # This captures "L3 Support" as requested
+    group_col = incidents["assignment_group"].astype(str)
+    
+    l2_count = len(incidents[group_col.str.contains(L2_SEARCH, case=False, na=False)])
+    l3_count = len(incidents[group_col.str.contains(L3_SEARCH, case=False, na=False)])
+    l4_count = len(incidents[group_col.str.contains(L4_SEARCH, case=False, na=False)])
 
-    result = pd.DataFrame({
-        "Date": dates,
-        "New Daily Tickets in L3 queue": new_daily.values,
-        "Reassignments": daily_reassignments.values,
-        "Resolved by L3": 0,
-        "Distributed to L2": 0,
-        "Distributed to L4": 0,
-        "Third parties": 0,
-        "Existing L3 queue": baseline
-    })
+    for d in dates:
+        day_metrics = metrics[metrics["date_only"] == d]
+        
+        # Requirement 2: Total new incidents (len of 'id' column from metric_instance.csv)
+        new_incidents = len(day_metrics["id"]) if "id" in day_metrics.columns else 0
+        
+        results.append({
+            "Date": d,
+            "Total New Incidents": new_incidents,
+            "Total Existing Tickets": total_existing,
+            "Support Group L1 (L2 Count)": l2_count,
+            "Support Group L3": l3_count,
+            "Support Group L3 (L4 Count)": l4_count,
+            "Support Group L4 (L2 Count)": l2_count
+        })
     
-    # Calculate Total L3 queue (Sum columns 1-6 + Existing queue)
-    result["Total L3 queue"] = result.iloc[:, 1:7].sum(axis=1) + result["Existing L3 queue"]
-    
-    return result
+    return pd.DataFrame(results)
 
-def print_summary(df):
-    print("\n" + "=" * 80)
-    print("SUPPORT DAILY DISTRIBUTION ANALYSIS")
-    print("=" * 80)
+def save_as_image(df, output_path: Path):
+    output_path.parent.mkdir(parents=True, exist_ok=True)
     
-    # Corrected: Added to check for Sat/Sun
-    df["Date"] = pd.to_datetime(df["Date"])
-    weekdays = df[~df["Date"].dt.dayofweek.isin()]
-    weekends = df[df["Date"].dt.dayofweek.isin()]
+    # Setup the table figure
+    fig, ax = plt.subplots(figsize=(14, len(df) * 0.6 + 2))
+    ax.axis('tight')
+    ax.axis('off')
     
-    print(df.to_string(index=False))
-    print("\n" + "-" * 80)
-    print(f"Total Weekday Incoming: {weekdays['New Daily Tickets in L3 queue'].sum()}")
-    print(f"Total Weekend Incoming: {weekends['New Daily Tickets in L3 queue'].sum()}")
+    table = ax.table(
+        cellText=df.values, 
+        colLabels=df.columns, 
+        loc='center', 
+        cellLoc='center'
+    )
+    table.auto_set_font_size(False)
+    table.set_fontsize(10)
+    table.scale(1.2, 1.5)
+    
+    # Save at 300 DPI as requested
+    plt.savefig(output_path, bbox_inches='tight', dpi=300)
+    print(f"Success: Analysis saved to {output_path}")
 
 def main():
+    # Use the requested path logic
+    output_folder = Path(__file__).parent.parent / "output"
+
     parser = argparse.ArgumentParser()
-    parser.add_argument("--metric", default="metric_instance.csv")
-    parser.add_argument("--incident", default="incident.csv")
+    parser.add_argument("--metric", default=output_folder / "metric_instance.csv")
+    parser.add_argument("--incident", default=output_folder / "incident.csv")
     args = parser.parse_args()
 
-    m_path, i_path = Path(args.metric), Path(args.incident)
+    m_path = Path(args.metric)
+    i_path = Path(args.incident)
+
     if not m_path.exists() or not i_path.exists():
-        print(f"Files not found: {m_path} or {i_path}")
+        print(f"Error: Files not found in {output_folder}")
         return
 
     metrics = load_metric_instance(m_path)
     incidents = load_incidents(i_path)
     
-    if metrics.empty or incidents.empty:
-        print("Error: One or more source files are empty or could not be parsed.")
-        return
-
-    daily_df = analyze_support_daily_distribution(metrics, incidents)
-    print_summary(daily_df)
+    final_df = analyze_data(metrics, incidents)
+    
+    if not final_df.empty:
+        print(final_df.to_string(index=False))
+        save_as_image(final_df, output_folder / "analysis_table.png")
+    else:
+        print("Data analysis failed. Please check file column headers.")
 
 if __name__ == "__main__":
     main()
