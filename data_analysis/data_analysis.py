@@ -7,18 +7,54 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import re
 
-def load_incidents(path: Path) -> pd.DataFrame:
+def load_incidents(path: Path = None) -> pd.DataFrame:
     """Load incidents from incident.csv with encoding fallback."""
+    if path is None:
+        path = Path(__file__).parent.parent / "output" / "incident.csv"
+    
     encodings = ['utf-8', 'latin-1', 'cp1252']
     for encoding in encodings:
         try:
             incidents = pd.read_csv(path, encoding=encoding)
             if "number" in incidents.columns:
                 incidents["number"] = incidents["number"].astype(str).str.upper().str.strip()
-            print(f"[INFO] Loaded {len(incidents)} incidents from incident.csv")
+            print(f"[INFO] Loaded {len(incidents)} incidents from {path}")
             return incidents
         except (UnicodeDecodeError, FileNotFoundError):
             continue
+    print(f"[ERROR] Could not load incidents from {path}")
+    return pd.DataFrame()
+
+def load_problems(path: Path = None) -> pd.DataFrame:
+    """Load problems from problems.csv with encoding fallback."""
+    if path is None:
+        path = Path(__file__).parent.parent / "output" / "problems.csv"
+    
+    encodings = ['utf-8', 'latin-1', 'cp1252']
+    for encoding in encodings:
+        try:
+            problems = pd.read_csv(path, encoding=encoding)
+            print(f"[INFO] Loaded {len(problems)} problems from {path}")
+            return problems
+        except (UnicodeDecodeError, FileNotFoundError):
+            continue
+    print(f"[WARNING] Could not load problems from {path}")
+    return pd.DataFrame()
+
+def load_metric_instance(path: Path = None) -> pd.DataFrame:
+    """Load metric instances from metric_instance.csv with encoding fallback."""
+    if path is None:
+        path = Path(__file__).parent.parent / "output" / "metric_instance.csv"
+    
+    encodings = ['utf-8', 'latin-1', 'cp1252']
+    for encoding in encodings:
+        try:
+            metrics = pd.read_csv(path, encoding=encoding)
+            print(f"[INFO] Loaded {len(metrics)} metric instances from {path}")
+            return metrics
+        except (UnicodeDecodeError, FileNotFoundError):
+            continue
+    print(f"[WARNING] Could not load metric instances from {path}")
     return pd.DataFrame()
 
 def _normalize_text(text: str) -> str:
@@ -53,7 +89,7 @@ def categorize_issue(description: str) -> str:
     
     return "UNCATEGORIZED"
 
-def analyze_data(incidents: pd.DataFrame) -> Tuple:
+def analyze_data(incidents: pd.DataFrame, problems: pd.DataFrame = None, metrics: pd.DataFrame = None) -> Tuple:
     if incidents.empty:
         return pd.DataFrame(), {}, pd.DataFrame(), pd.DataFrame()
 
@@ -155,15 +191,20 @@ def create_visualizations(output_dir: Path, issue_trends: pd.DataFrame):
     print(f"[INFO] ✓ Visualization saved to: {graph_path}")
 
 def main():
-    incident_path = Path("incident.csv")
-    output_dir = Path("output")
+    output_dir = Path(__file__).parent.parent / "output"
+    incident_path = output_dir / "incident.csv"
+    problems_path = output_dir / "problems.csv"
+    metric_path = output_dir / "metric_instance.csv"
 
     incidents = load_incidents(incident_path)
+    problems = load_problems(problems_path)
+    metrics = load_metric_instance(metric_path)
+    
     if incidents.empty:
         print("[ERROR] No data found in incident.csv")
         return
 
-    _, _, issue_trends, problem_report = analyze_data(incidents)
+    _, _, issue_trends, problem_report = analyze_data(incidents, problems, metrics)
     
     create_visualizations(output_dir, issue_trends)
     create_problem_table_img(output_dir, problem_report)
@@ -172,6 +213,10 @@ def main():
     print("\n" + "=" * 50)
     print("SNOW INCIDENT ANALYSIS SUMMARY")
     print("=" * 50)
+    if not problems.empty:
+        print(f"[INFO] Total problems loaded: {len(problems)}")
+    if not metrics.empty:
+        print(f"[INFO] Total metric instances loaded: {len(metrics)}")
     
     print("\nTOP PROBLEM ASSOCIATIONS:")
     print(problem_report.to_string(index=False))

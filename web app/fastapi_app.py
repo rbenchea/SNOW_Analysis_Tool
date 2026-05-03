@@ -15,15 +15,20 @@ from fastapi import FastAPI, File, Form, UploadFile
 from fastapi.responses import HTMLResponse
 from fastapi.staticfiles import StaticFiles
 
-# ONLY import what exists in your data_analysis.py
+# Import from data_analysis module (go up one level to parent directory)
+import sys
+sys.path.insert(0, str(Path(__file__).parent.parent))
+
 from data_analysis import (
     load_incidents,
+    load_problems,
+    load_metric_instance,
     analyze_data,
     create_visualizations,
     create_problem_table_img
 )
 
-OUTPUT_DIR = Path(__file__).parent / "output"
+OUTPUT_DIR = Path(__file__).parent.parent / "output"
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 app = FastAPI(title="SNOW Analysis Tool")
@@ -59,20 +64,34 @@ def _base_html(body: str, title: str = "SNOW Analysis Tool") -> str:
 def _upload_form() -> str:
     downloads = Path.home() / "Downloads"
     default_incident = downloads / "incident.csv"
+    default_metric   = downloads / "metric_instance.csv"
+    default_problem  = downloads / "problem.csv"
     return f"""
 <div class="card">
   <h1>📊 SNOW Analysis Tool</h1>
-  <p>Upload your CSV file <strong>or</strong> leave the field empty to use the default
-     <code>~/Downloads/incident.csv</code> path.</p>
+  <p>Upload your CSV files <strong>or</strong> leave the fields empty to use the default
+     <code>~/Downloads/</code> paths.</p>
 
   <form method="post" action="/run" enctype="multipart/form-data">
-    <h2>Option A — Upload file directly</h2>
+    <h2>Option A — Upload files directly</h2>
     <label>incident.csv</label>
     <input type="file" name="incident_file" accept=".csv"/>
 
-    <h2>Option B — Use file path on this machine</h2>
+    <label>metric_instance.csv</label>
+    <input type="file" name="metric_file" accept=".csv"/>
+
+    <label>problem.csv (optional)</label>
+    <input type="file" name="problem_file" accept=".csv"/>
+
+    <h2>Option B — Use file paths on this machine</h2>
     <label>Path to incident.csv</label>
     <input type="text" name="incident_path" placeholder="{default_incident}"/>
+
+    <label>Path to metric_instance.csv</label>
+    <input type="text" name="metric_path" placeholder="{default_metric}"/>
+
+    <label>Path to problem.csv (optional)</label>
+    <input type="text" name="problem_path" placeholder="{default_problem}"/>
 
     <button type="submit">▶ Run Analysis</button>
   </form>
@@ -92,28 +111,34 @@ async def run_analysis(
 ):
     tmp_dir = Path(tempfile.mkdtemp())
     try:
-        # Resolve incident file
+        # Resolve incident file - check output folder first
+        output_folder = OUTPUT_DIR
+        default_output_incident = output_folder / "incident.csv"
+        
         if incident_file and incident_file.filename:
             inc_path = tmp_dir / "incident.csv"
             inc_path.write_bytes(await incident_file.read())
         elif incident_path and incident_path.strip():
             inc_path = Path(incident_path.strip())
+        elif default_output_incident.exists():
+            inc_path = default_output_incident
         else:
             inc_path = Path.home() / "Downloads" / "incident.csv"
 
         if not inc_path.exists():
             return _base_html(f'<div class="msg error">❌ File not found at {inc_path}</div>' + _upload_form())
 
-        # RUN ANALYSIS (Matching your data_analysis.py signatures)
+        # RUN ANALYSIS
         captured = io.StringIO()
         
         with contextlib.redirect_stdout(captured):
             incidents = load_incidents(inc_path)
+            problems = load_problems()
+            metrics = load_metric_instance()
+            
             if not incidents.empty:
-                # Updated to match: analyzed_df, summary, issue_trends, problem_report
-                _, summary, issue_trends, problem_report = analyze_data(incidents)
+                _, summary, issue_trends, problem_report = analyze_data(incidents, problems, metrics)
                 
-                # Updated to match your function parameters
                 create_visualizations(OUTPUT_DIR, issue_trends)
                 create_problem_table_img(OUTPUT_DIR, problem_report)
             else:

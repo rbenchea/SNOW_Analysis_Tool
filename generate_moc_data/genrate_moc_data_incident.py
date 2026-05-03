@@ -2,10 +2,28 @@ import csv
 import random
 import re
 import os
+from pathlib import Path
 
-def generate_incident_csv(input_file="metric_instance.csv", problems_file="problems.csv", output_file="incident.csv"):
+def generate_incident_csv(input_file=None, problems_file=None, output_file=None):
     try:
-        # --- 1. Validation and Problem ID Loading ---
+        # Setup output directory paths (go up two levels: generate moc data -> proiect_final_wantsome -> output)
+        output_dir = Path(__file__).parent.parent / "output"
+        output_dir.mkdir(parents=True, exist_ok=True)
+        
+        # Set default paths to output folder
+        if input_file is None:
+            input_file = output_dir / "metric_instance.csv"
+        if problems_file is None:
+            problems_file = output_dir / "problems.csv"
+        if output_file is None:
+            output_file = output_dir / "incident.csv"
+        
+        # Convert to strings for os.path.exists compatibility
+        input_file = str(input_file)
+        problems_file = str(problems_file)
+        output_file = str(output_file)
+        
+        # 1. Validation and Problem ID Loading
         if not os.path.exists(input_file):
             print(f"Error: {input_file} not found.")
             return
@@ -35,7 +53,7 @@ def generate_incident_csv(input_file="metric_instance.csv", problems_file="probl
             ("Invoice Failure", "Invoice generation fails due to unknown errors")
         ]
 
-        # --- 2. Process Existing Metrics ---
+        #2. Process Existing Metrics 
         existing_incidents = []
         last_numeric_id = 0
 
@@ -64,7 +82,7 @@ def generate_incident_csv(input_file="metric_instance.csv", problems_file="probl
                 "problem_id": random.choice(valid_problem_ids) 
             })
 
-        # --- 3. Logic for 200 New Tickets (Randomized) ---
+        # 3. Logic for 200 New Tickets (Randomized)
         new_groups = (["L4 Support Group"] * 100 + 
                       ["L2 Support Group"] * 50 + 
                       ["L1 Support Group"] * 50)
@@ -82,7 +100,7 @@ def generate_incident_csv(input_file="metric_instance.csv", problems_file="probl
                 "problem_id": random.choice(valid_problem_ids)
             })
 
-        # --- 4. NEW: Logic for 87 Specific 404 Error Tickets ---
+        # 4. NEW: Logic for 87 Specific 404 Error Tickets
         # We start incrementing from 201 to reach 287 (200 random + 87 specific)
         specific_desc = "404 not found when clicking on the existing stock item"
         specific_note = "Navigation error in stock item module"
@@ -98,7 +116,7 @@ def generate_incident_csv(input_file="metric_instance.csv", problems_file="probl
                 "problem_id": random.choice(valid_problem_ids)
             })
 
-        # --- 5. Write to CSV ---
+        # 5. Write to CSV
         headers = [
             "number", "sys_updated_by", "short_description", "state", "assignment_group",  
             "assigned_to", "problem_id", "time_worked", "group_list", "resolved_by", 
@@ -131,7 +149,7 @@ def generate_incident_csv(input_file="metric_instance.csv", problems_file="probl
                     short_desc             
                 ])
 
-        print(f"Success! Generated {len(final_rows)} total incidents.")
+        print(f"Success! Generated {len(final_rows)} total incidents to: {output_file}")
 
 
     except Exception as e:

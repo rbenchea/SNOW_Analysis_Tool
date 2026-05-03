@@ -1,11 +1,17 @@
 import sys
 from pathlib import Path
 import pandas as pd
+import pytest
 
-# Add project root to sys.path so we can import data_analysis
+# Add project root to sys.path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-import data_analysis as da
+from data_analysis import (
+    load_incidents,
+    analyze_data,
+    categorize_issue,
+    create_problem_table_img
+)
 
 def test_normalize_text_and_categorize():
     # Normalize: german chars, punctuation and extra spaces

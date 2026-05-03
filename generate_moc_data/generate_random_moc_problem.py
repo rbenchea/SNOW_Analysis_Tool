@@ -1,11 +1,13 @@
 import csv
 import random
 from datetime import datetime, timedelta
+from pathlib import Path
 
 def get_problem_timestamp_map(incident_file, metric_file):
     """
     Links Incident IDs to Problem IDs and fetches the creation timestamp.
     Returns: { 'PRB0001001': '2026-04-01 12:00:00' }
+    This is done to reflect data realistically how these are in SNOW
     """
     inc_to_prb = {}
     prb_to_timestamp = {}
@@ -13,15 +15,15 @@ def get_problem_timestamp_map(incident_file, metric_file):
     try:
         # Step 1: Map Incident ID to Problem ID
         with open(incident_file, mode='r', encoding='utf-8') as f:
-            # Assuming ';' delimiter based on previous requirements
-            reader = csv.DictReader(f, delimiter=';')
+            # Assuming ',' delimiter (standard CSV)
+            reader = csv.DictReader(f)
             for row in reader:
                 if row.get('number') and row.get('problem_id'):
                     inc_to_prb[row['number']] = row['problem_id']
 
         # Step 2: Map Incident ID to its Timestamp from metrics
         with open(metric_file, mode='r', encoding='utf-8') as f:
-            reader = csv.DictReader(f, delimiter=';')
+            reader = csv.DictReader(f)
             for row in reader:
                 inc_id = row.get('id')
                 timestamp = row.get('sys_created_on')
@@ -41,7 +43,24 @@ def get_problem_timestamp_map(incident_file, metric_file):
         print(f"File missing: {e}")
         return {}
 
-def generate_problems_csv(output_file="problems.csv"):
+def generate_problems_csv(incident_file=None, metric_file=None, output_file=None):
+    # Setup output directory paths 
+    output_dir = Path(__file__).parent.parent / "output"
+    output_dir.mkdir(parents=True, exist_ok=True)
+    
+    # Set default paths to output folder
+    if incident_file is None:
+        incident_file = output_dir / "incident.csv"
+    if metric_file is None:
+        metric_file = output_dir / "metric_instance.csv"
+    if output_file is None:
+        output_file = output_dir / "problems.csv"
+    
+    # Convert to strings for file operations
+    incident_file = str(incident_file)
+    metric_file = str(metric_file)
+    output_file = str(output_file)
+    
     descriptions = {
         "PRB0001001": "Database deadlocks during concurrent stock updates for Flash Sale items",
         "PRB0001002": "PDF Generation Service failing to map VAT rates for international addresses",
@@ -62,7 +81,7 @@ def generate_problems_csv(output_file="problems.csv"):
     ]
 
     # Get the timestamps linked via incident.csv
-    time_map = get_problem_timestamp_map("incident.csv", "metric_instance.csv")
+    time_map = get_problem_timestamp_map(incident_file, metric_file)
 
     try:
         with open(output_file, mode='w', newline='', encoding='utf-8') as f:
