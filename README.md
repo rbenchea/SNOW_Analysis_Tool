@@ -216,7 +216,8 @@ proiect_final_wantsome/
     ├── metric_instance.csv
     ├── problems.csv
     ├── issues_distribution.png
-    └── problem_report_table.png
+    ├── problem_report_table.png
+    └── analysis_table.png
 ```
 
 ### Testing
