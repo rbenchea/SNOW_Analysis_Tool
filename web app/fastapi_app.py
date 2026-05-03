@@ -80,7 +80,7 @@ def _upload_form() -> str:
     <label>metric_instance.csv</label>
     <input type="file" name="metric_file" accept=".csv"/>
 
-    <label>problem.csv (optional)</label>
+    <label>problem.csv </label>
     <input type="file" name="problem_file" accept=".csv"/>
 
     <h2>Option B — Use file paths on this machine</h2>

@@ -69,8 +69,7 @@ def analyze_data(metrics, incidents):
             "Total Existing Tickets": total_existing,
             "Support Group L1 (L2 Count)": l2_count,
             "Support Group L3": l3_count,
-            "Support Group L3 (L4 Count)": l4_count,
-            "Support Group L4 (L2 Count)": l2_count
+            "Support Group L4 (L4 Count)": l4_count
         })
     
     return pd.DataFrame(results)
