@@ -16,12 +16,13 @@ A data analysis tool for ServiceNow (SNOW) incident management. Process CSV file
   - CART ISSUES
   - INVOICE ISSUES
   - UNCATEGORIZED
-- **Problem ID Aggregation**: Groups incidents by Problem ID and counts associated tickets.
+- **Problem ID Aggregation**: Groups incidents by Problem ID, assignment group, and title, with incident counts.
 - **Analysis Summary**: Provides total incidents, tickets with problems, and unique issue type counts.
 - **Visualizations**: 
   - Pie chart showing incident distribution by category
-  - Table image displaying Problem IDs and incident counts
+  - Table image displaying Problem IDs, Assignment Groups, Titles, and incident counts
 - **Web Interface**: FastAPI-based web UI for easy file upload and analysis.
+- **CLI**: Command-line interface for batch processing.
 - **Output**: Saves visualizations to the output directory.
 
 ### Requirements
@@ -33,42 +34,46 @@ A data analysis tool for ServiceNow (SNOW) incident management. Process CSV file
   - matplotlib>=3.4.0
   - fastapi>=0.95.0
   - uvicorn>=0.21.0
+  - python-multipart>=0.0.5
 
 ### Installation
 
 1. Clone the repository:
-   ```
+   ```bash
    git clone <repository-url>
    cd MyGitProject-
    ```
 
 2. Navigate to the project folder:
-   ```
+   ```bash
    cd proiect_final_wantsome
    ```
 
 3. Install dependencies:
-   ```
+   ```bash
    pip install -r requirements.txt
    ```
 
 ### Usage
 
-### Option 1: Command Line (CLI)
+#### Option 1: Command Line (CLI)
 
-Run the analysis script with default CSV file in the current directory:
+Run the analysis script with the default `incident.csv` file in the current directory:
 
-```
+```bash
 python data_analysis.py
 ```
 
-The script expects `incident.csv` in the current working directory.
+The script expects `incident.csv` in the current working directory and outputs:
+- Console summary with statistics
+- Pie chart visualization
+- Problem report table
 
-### Option 2: Web Interface (FastAPI)
+#### Option 2: Web Interface (FastAPI)
 
 Start the web server:
 
-```
+```bash
 python fastapi_app.py
 ```
 
@@ -77,37 +82,34 @@ Then open your browser to:
 http://localhost:8000
 ```
 
-**Features:**
+**Web Features:**
 - Upload incident CSV files directly via the web form
 - Or specify file paths on your machine (defaults to `~/Downloads/incident.csv`)
 - View generated visualizations in the browser
 - Download visualization images
+- Browse gallery of all generated visualizations at `/gallery`
 
-View a gallery of all generated visualizations:
-```
-http://localhost:8000/gallery
-```
+### Input Data Format
 
-## Input Data Format
-
-### incident.csv
+#### incident.csv
 
 Required columns:
 - `number`: Incident number (will be normalized to uppercase)
 - `short_description`: Brief description of the incident
 - `description`: Full incident description
-- `problem_id`: Associated Problem ID (format: PRB followed by numbers)
+- `problem_id`: Associated Problem ID (format: PRB followed by numbers, e.g., PRB001)
+- `assignment_group`: Assignment group responsible for the incident
 
 Example:
-```
-number,short_description,description,problem_id
-INC0001,Checkout timeout,408 request timeout during checkout,PRB001
-INC0002,Stock sync error,Inventory levels not syncing,PRB002
+```csv
+number,short_description,description,problem_id,assignment_group
+INC0001,Checkout timeout,408 request timeout during checkout,PRB001,CHECKOUT_TEAM
+INC0002,Stock sync error,Inventory levels not syncing,PRB002,INVENTORY_TEAM
 ```
 
-## Output
+### Output
 
-### Console Output (CLI)
+#### Console Output (CLI)
 
 ```
 ==================================================
@@ -118,33 +120,39 @@ Tickets With Problem   : 45
 Unique Issue Types     : 5
 
 TOP PROBLEM ASSOCIATIONS:
-Problem ID  Description              Incident Count
-PRB001      Checkout timeout         12
-PRB002      Stock sync error         8
+Problem ID  Assignment Group  Title                 Total SNOW Tickets
+PRB001      CHECKOUT_TEAM     Checkout timeout      12
+PRB002      INVENTORY_TEAM    Stock sync error      8
 ...
 ```
 
-### Generated Files
+#### Generated Files
 
 - `issues_distribution.png`: Pie chart of incident distribution by category
-- `problem_report_table.png`: Table showing Problem IDs and associated incident counts
+- `problem_report_table.png`: Table showing Problem IDs, Assignment Groups, Titles, and associated incident counts
 
-## Project Structure
+### Project Structure
 
 ```
 proiect_final_wantsome/
-├── data_analysis.py           # Core analysis logic
+├── data_analysis.py           # Core analysis logic and CLI
 ├── fastapi_app.py             # Web interface
 ├── requirements.txt           # Python dependencies
 ├── README.md                  # This file
 ├── tests/
 │   └── test_data_analysis.py  # Unit tests
-└── output/                    # Generated visualizations
+└── output/                    # Generated visualizations (created at runtime)
 ```
 
-## Testing
+### Testing
 
-Run unit tests using pytest:
+Install pytest for running tests:
+
+```bash
+pip install pytest
+```
+
+Run unit tests:
 
 ```bash
 pytest tests/test_data_analysis.py -v
@@ -152,15 +160,22 @@ pytest tests/test_data_analysis.py -v
 
 Tests cover:
 - Text normalization and German character handling
-- Issue categorization logic
-- CSV loading with number column normalization
-- Problem ID aggregation and grouping
+- Issue categorization logic across all issue types
+- CSV loading with number column normalization and encoding fallback
+- Problem ID aggregation and grouping by assignment group
 - Visualization file generation
+- Empty dataset handling
 
-## Contributing
+### API Endpoints (Web Interface)
+
+- `GET /` – Upload form and main interface
+- `POST /run` – Run analysis on uploaded or specified file
+- `GET /gallery` – View all generated visualizations
+
+### Contributing
 
 Feel free to contribute by submitting issues or pull requests.
 
-## License
+### License
 
 [Add your license information here]
