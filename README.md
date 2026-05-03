@@ -202,6 +202,8 @@ All output files are saved to the `output/` folder:
 ```
 proiect_final_wantsome/
 ├── data_analysis.py                          # Core analysis logic and CLI
+├── daily_distribution_tickets.py             # Daily distribution analysis logic
+├── export_issues_distribution_to_excel.py    # Export the categorized incidents as an Excel file
 ├── fastapi_app.py                            # Web interface
 ├── requirements.txt                          # Python dependencies
 ├── README.md                                 # This file
