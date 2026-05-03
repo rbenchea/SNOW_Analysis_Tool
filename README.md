@@ -82,8 +82,8 @@ Creates `output/incident.csv` with incidents linked to the metrics. Requires `me
 ```bash
 # Generate all mock data in order
 python "generate moc data/generate_random_moc_metrics.py"
-python "generate moc data/genrate_moc_data_incident.py"
 python "generate moc data/generate_random_moc_problem.py"
+python "generate moc data/genrate_moc_data_incident.py"
 
 # Then run the analysis
 python data_analysis.py
