@@ -213,13 +213,15 @@ proiect_final_wantsome/
 │   └── generate_random_moc_problem.py        # Generate problems
 ├── tests/
 │   └── test_data_analysis.py                 # Unit tests
-└── output/                                   # Generated data and visualizations
-    ├── incident.csv
-    ├── metric_instance.csv
-    ├── problems.csv
+├── input/                                    # Generated data 
+│  ├──  metric_instance.csv
+│  ├──  problems.csv 
+│  └──  incident.csv         
+└── output/                                   # Generated visualizations
     ├── issues_distribution.png
     ├── problem_report_table.png
-    └── analysis_table.png
+    ├── analysis_table.png
+    └── categorized_issues.                   # folder with categorized issues exported to excel
 ```
 
 ### Testing

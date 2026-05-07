@@ -1,0 +1,401 @@
+sys_created_on,definition,id,value,metric_start,metric_end,duration,calculation_complete
+2026-04-23 12:46:09,Incident Assignment Group,Incident: INC12229855,L3 Support Group,2026-04-23 12:46:09,2026-04-25 21:12:05,203156,TRUE
+2026-04-13 21:56:33,Incident Assignment Group,Incident: INC12229856,L3 Support Group,2026-04-13 21:56:33,2026-04-14 16:54:40,68287,TRUE
+2026-04-08 16:01:55,Incident Assignment Group,Incident: INC12229857,L3 Support Group,2026-04-08 16:01:55,,,FALSE
+2026-04-25 02:44:26,Incident Assignment Group,Incident: INC12229858,L3 Support Group,2026-04-25 02:44:26,,,FALSE
+2026-04-28 17:24:32,Incident Assignment Group,Incident: INC12229859,L3 Support Group,2026-04-28 17:24:32,,,FALSE
+2026-04-16 22:07:31,Incident Assignment Group,Incident: INC12229860,L3 Support Group,2026-04-16 22:07:31,,,FALSE
+2026-04-07 11:18:38,Incident Assignment Group,Incident: INC12229861,L3 Support Group,2026-04-07 11:18:38,2026-04-08 11:16:06,86248,TRUE
+2026-04-25 04:51:48,Incident Assignment Group,Incident: INC12229862,L3 Support Group,2026-04-25 04:51:48,,,FALSE
+2026-04-26 21:09:21,Incident Assignment Group,Incident: INC12229863,L3 Support Group,2026-04-26 21:09:21,,,FALSE
+2026-04-11 23:26:43,Incident Assignment Group,Incident: INC12229864,L3 Support Group,2026-04-11 23:26:43,2026-04-12 07:10:12,27809,TRUE
+2026-04-14 22:04:47,Incident Assignment Group,Incident: INC12229865,L3 Support Group,2026-04-14 22:04:47,2026-04-16 11:36:31,135104,TRUE
+2026-04-13 21:52:19,Incident Assignment Group,Incident: INC12229866,L3 Support Group,2026-04-13 21:52:19,,,FALSE
+2026-04-19 08:04:35,Incident Assignment Group,Incident: INC12229867,L3 Support Group,2026-04-19 08:04:35,2026-04-21 23:04:59,226824,TRUE
+2026-04-10 14:18:07,Incident Assignment Group,Incident: INC12229868,L3 Support Group,2026-04-10 14:18:07,,,FALSE
+2026-04-10 13:32:33,Incident Assignment Group,Incident: INC12229869,L3 Support Group,2026-04-10 13:32:33,2026-04-12 05:47:51,144918,TRUE
+2026-04-28 08:15:35,Incident Assignment Group,Incident: INC12229870,L3 Support Group,2026-04-28 08:15:35,2026-04-30 15:31:14,198939,TRUE
+2026-04-09 01:07:56,Incident Assignment Group,Incident: INC12229871,L3 Support Group,2026-04-09 01:07:56,2026-04-09 23:41:31,81215,TRUE
+2026-04-27 01:48:23,Incident Assignment Group,Incident: INC12229872,L3 Support Group,2026-04-27 01:48:23,,,FALSE
+2026-04-19 20:07:31,Incident Assignment Group,Incident: INC12229873,L3 Support Group,2026-04-19 20:07:31,,,FALSE
+2026-04-02 20:10:16,Incident Assignment Group,Incident: INC12229874,L3 Support Group,2026-04-02 20:10:16,,,FALSE
+2026-04-20 08:14:15,Incident Assignment Group,Incident: INC12229875,L3 Support Group,2026-04-20 08:14:15,2026-04-22 04:41:20,160025,TRUE
+2026-04-16 07:44:37,Incident Assignment Group,Incident: INC12229876,L3 Support Group,2026-04-16 07:44:37,,,FALSE
+2026-04-16 01:37:21,Incident Assignment Group,Incident: INC12229877,L3 Support Group,2026-04-16 01:37:21,,,FALSE
+2026-04-19 05:27:31,Incident Assignment Group,Incident: INC12229878,L3 Support Group,2026-04-19 05:27:31,2026-04-19 13:04:19,27408,TRUE
+2026-04-03 04:00:23,Incident Assignment Group,Incident: INC12229879,L3 Support Group,2026-04-03 04:00:23,2026-04-04 17:43:51,135808,TRUE
+2026-04-15 07:47:55,Incident Assignment Group,Incident: INC12229880,L3 Support Group,2026-04-15 07:47:55,2026-04-17 07:13:46,170751,TRUE
+2026-04-20 22:10:05,Incident Assignment Group,Incident: INC12229881,L3 Support Group,2026-04-20 22:10:05,2026-04-23 09:39:09,214144,TRUE
+2026-04-06 01:42:54,Incident Assignment Group,Incident: INC12229882,L3 Support Group,2026-04-06 01:42:54,,,FALSE
+2026-04-06 05:15:56,Incident Assignment Group,Incident: INC12229883,L3 Support Group,2026-04-06 05:15:56,2026-04-08 17:59:58,218642,TRUE
+2026-04-14 10:27:33,Incident Assignment Group,Incident: INC12229884,L3 Support Group,2026-04-14 10:27:33,,,FALSE
+2026-04-25 10:10:27,Incident Assignment Group,Incident: INC12229885,L3 Support Group,2026-04-25 10:10:27,2026-04-27 17:00:47,197420,TRUE
+2026-04-17 12:08:27,Incident Assignment Group,Incident: INC12229886,L3 Support Group,2026-04-17 12:08:27,,,FALSE
+2026-04-22 18:01:56,Incident Assignment Group,Incident: INC12229887,L3 Support Group,2026-04-22 18:01:56,2026-04-25 08:29:04,224828,TRUE
+2026-04-05 15:22:38,Incident Assignment Group,Incident: INC12229888,L3 Support Group,2026-04-05 15:22:38,,,FALSE
+2026-04-17 01:38:24,Incident Assignment Group,Incident: INC12229889,L3 Support Group,2026-04-17 01:38:24,,,FALSE
+2026-04-06 22:41:51,Incident Assignment Group,Incident: INC12229890,L3 Support Group,2026-04-06 22:41:51,,,FALSE
+2026-04-12 18:03:11,Incident Assignment Group,Incident: INC12229891,L3 Support Group,2026-04-12 18:03:11,2026-04-14 21:09:22,183971,TRUE
+2026-04-20 09:39:45,Incident Assignment Group,Incident: INC12229892,L3 Support Group,2026-04-20 09:39:45,,,FALSE
+2026-04-20 20:23:09,Incident Assignment Group,Incident: INC12229893,L3 Support Group,2026-04-20 20:23:09,,,FALSE
+2026-04-14 08:30:22,Incident Assignment Group,Incident: INC12229894,L3 Support Group,2026-04-14 08:30:22,2026-04-16 21:54:05,221023,TRUE
+2026-04-26 22:53:31,Incident Assignment Group,Incident: INC12229895,L3 Support Group,2026-04-26 22:53:31,2026-04-29 19:31:50,247099,TRUE
+2026-04-18 09:58:29,Incident Assignment Group,Incident: INC12229896,L3 Support Group,2026-04-18 09:58:29,2026-04-18 11:26:12,5263,TRUE
+2026-04-18 08:15:24,Incident Assignment Group,Incident: INC12229897,L3 Support Group,2026-04-18 08:15:24,,,FALSE
+2026-04-24 11:36:13,Incident Assignment Group,Incident: INC12229898,L3 Support Group,2026-04-24 11:36:13,2026-04-26 15:15:28,185955,TRUE
+2026-04-21 22:03:09,Incident Assignment Group,Incident: INC12229899,L3 Support Group,2026-04-21 22:03:09,2026-04-24 18:33:19,246610,TRUE
+2026-04-07 01:04:00,Incident Assignment Group,Incident: INC12229900,L3 Support Group,2026-04-07 01:04:00,2026-04-07 03:13:49,7789,TRUE
+2026-04-04 10:34:35,Incident Assignment Group,Incident: INC12229901,L3 Support Group,2026-04-04 10:34:35,,,FALSE
+2026-04-03 10:52:14,Incident Assignment Group,Incident: INC12229902,L3 Support Group,2026-04-03 10:52:14,2026-04-03 14:50:35,14301,TRUE
+2026-04-27 01:13:06,Incident Assignment Group,Incident: INC12229903,L3 Support Group,2026-04-27 01:13:06,2026-04-27 04:10:55,10669,TRUE
+2026-04-13 14:20:52,Incident Assignment Group,Incident: INC12229904,L3 Support Group,2026-04-13 14:20:52,2026-04-14 04:42:50,51718,TRUE
+2026-04-18 05:57:45,Incident Assignment Group,Incident: INC12229905,L3 Support Group,2026-04-18 05:57:45,,,FALSE
+2026-04-28 04:49:33,Incident Assignment Group,Incident: INC12229906,L3 Support Group,2026-04-28 04:49:33,2026-04-28 07:33:48,9855,TRUE
+2026-04-11 11:07:47,Incident Assignment Group,Incident: INC12229907,L3 Support Group,2026-04-11 11:07:47,,,FALSE
+2026-04-27 09:05:43,Incident Assignment Group,Incident: INC12229908,L3 Support Group,2026-04-27 09:05:43,2026-04-30 04:52:35,244012,TRUE
+2026-04-18 02:41:29,Incident Assignment Group,Incident: INC12229909,L3 Support Group,2026-04-18 02:41:29,2026-04-20 08:22:05,193236,TRUE
+2026-04-20 17:18:32,Incident Assignment Group,Incident: INC12229910,L3 Support Group,2026-04-20 17:18:32,2026-04-21 23:40:51,109339,TRUE
+2026-04-11 06:39:24,Incident Assignment Group,Incident: INC12229911,L3 Support Group,2026-04-11 06:39:24,2026-04-11 09:02:56,8612,TRUE
+2026-04-01 00:59:46,Incident Assignment Group,Incident: INC12229912,L3 Support Group,2026-04-01 00:59:46,,,FALSE
+2026-04-27 00:01:42,Incident Assignment Group,Incident: INC12229913,L3 Support Group,2026-04-27 00:01:42,,,FALSE
+2026-04-03 21:32:44,Incident Assignment Group,Incident: INC12229914,L3 Support Group,2026-04-03 21:32:44,2026-04-05 07:47:43,123299,TRUE
+2026-04-03 14:19:50,Incident Assignment Group,Incident: INC12229915,L3 Support Group,2026-04-03 14:19:50,,,FALSE
+2026-04-10 10:28:21,Incident Assignment Group,Incident: INC12229916,L3 Support Group,2026-04-10 10:28:21,2026-04-13 09:53:14,257093,TRUE
+2026-04-07 14:38:54,Incident Assignment Group,Incident: INC12229917,L3 Support Group,2026-04-07 14:38:54,,,FALSE
+2026-04-06 13:04:10,Incident Assignment Group,Incident: INC12229918,L3 Support Group,2026-04-06 13:04:10,2026-04-08 11:42:26,167896,TRUE
+2026-04-18 01:25:16,Incident Assignment Group,Incident: INC12229919,L3 Support Group,2026-04-18 01:25:16,,,FALSE
+2026-04-25 13:20:08,Incident Assignment Group,Incident: INC12229920,L3 Support Group,2026-04-25 13:20:08,2026-04-27 14:00:49,175241,TRUE
+2026-04-16 05:40:29,Incident Assignment Group,Incident: INC12229921,L3 Support Group,2026-04-16 05:40:29,2026-04-18 04:54:41,170052,TRUE
+2026-04-17 23:33:41,Incident Assignment Group,Incident: INC12229922,L3 Support Group,2026-04-17 23:33:41,2026-04-18 18:46:46,69185,TRUE
+2026-04-22 16:09:58,Incident Assignment Group,Incident: INC12229923,L3 Support Group,2026-04-22 16:09:58,2026-04-25 15:14:43,255885,TRUE
+2026-04-02 09:46:09,Incident Assignment Group,Incident: INC12229924,L3 Support Group,2026-04-02 09:46:09,2026-04-04 07:42:58,165409,TRUE
+2026-04-19 22:18:26,Incident Assignment Group,Incident: INC12229925,L3 Support Group,2026-04-19 22:18:26,,,FALSE
+2026-04-23 23:16:26,Incident Assignment Group,Incident: INC12229926,L3 Support Group,2026-04-23 23:16:26,2026-04-26 13:13:13,223007,TRUE
+2026-04-07 14:21:42,Incident Assignment Group,Incident: INC12229927,L3 Support Group,2026-04-07 14:21:42,2026-04-08 17:27:43,97561,TRUE
+2026-04-11 03:58:45,Incident Assignment Group,Incident: INC12229928,L3 Support Group,2026-04-11 03:58:45,,,FALSE
+2026-04-28 04:09:59,Incident Assignment Group,Incident: INC12229929,L3 Support Group,2026-04-28 04:09:59,,,FALSE
+2026-04-13 18:43:32,Incident Assignment Group,Incident: INC12229930,L3 Support Group,2026-04-13 18:43:32,,,FALSE
+2026-04-06 18:14:21,Incident Assignment Group,Incident: INC12229931,L3 Support Group,2026-04-06 18:14:21,2026-04-07 06:00:57,42396,TRUE
+2026-04-05 11:13:55,Incident Assignment Group,Incident: INC12229932,L3 Support Group,2026-04-05 11:13:55,,,FALSE
+2026-04-11 05:18:51,Incident Assignment Group,Incident: INC12229933,L3 Support Group,2026-04-11 05:18:51,,,FALSE
+2026-04-17 08:18:18,Incident Assignment Group,Incident: INC12229934,L3 Support Group,2026-04-17 08:18:18,,,FALSE
+2026-04-02 00:41:08,Incident Assignment Group,Incident: INC12229935,L3 Support Group,2026-04-02 00:41:08,2026-04-03 09:46:43,119135,TRUE
+2026-04-02 13:16:28,Incident Assignment Group,Incident: INC12229936,L3 Support Group,2026-04-02 13:16:28,,,FALSE
+2026-04-25 13:47:51,Incident Assignment Group,Incident: INC12229937,L3 Support Group,2026-04-25 13:47:51,2026-04-27 00:20:34,124363,TRUE
+2026-04-28 09:58:15,Incident Assignment Group,Incident: INC12229938,L3 Support Group,2026-04-28 09:58:15,2026-05-01 09:22:47,257072,TRUE
+2026-04-07 11:07:02,Incident Assignment Group,Incident: INC12229939,L3 Support Group,2026-04-07 11:07:02,,,FALSE
+2026-04-01 06:19:52,Incident Assignment Group,Incident: INC12229940,L3 Support Group,2026-04-01 06:19:52,2026-04-04 01:39:08,242356,TRUE
+2026-04-07 21:57:47,Incident Assignment Group,Incident: INC12229941,L3 Support Group,2026-04-07 21:57:47,,,FALSE
+2026-04-03 13:51:54,Incident Assignment Group,Incident: INC12229942,L3 Support Group,2026-04-03 13:51:54,,,FALSE
+2026-04-10 17:19:18,Incident Assignment Group,Incident: INC12229943,L3 Support Group,2026-04-10 17:19:18,,,FALSE
+2026-04-06 04:07:23,Incident Assignment Group,Incident: INC12229944,L3 Support Group,2026-04-06 04:07:23,,,FALSE
+2026-04-22 01:03:28,Incident Assignment Group,Incident: INC12229945,L3 Support Group,2026-04-22 01:03:28,2026-04-22 21:21:56,73108,TRUE
+2026-04-24 20:52:44,Incident Assignment Group,Incident: INC12229946,L3 Support Group,2026-04-24 20:52:44,,,FALSE
+2026-04-11 10:40:10,Incident Assignment Group,Incident: INC12229947,L3 Support Group,2026-04-11 10:40:10,,,FALSE
+2026-04-10 18:51:10,Incident Assignment Group,Incident: INC12229948,L3 Support Group,2026-04-10 18:51:10,2026-04-11 20:44:29,93199,TRUE
+2026-04-22 19:10:53,Incident Assignment Group,Incident: INC12229949,L3 Support Group,2026-04-22 19:10:53,2026-04-25 10:27:35,227802,TRUE
+2026-04-09 11:41:22,Incident Assignment Group,Incident: INC12229950,L3 Support Group,2026-04-09 11:41:22,,,FALSE
+2026-04-13 16:31:09,Incident Assignment Group,Incident: INC12229951,L3 Support Group,2026-04-13 16:31:09,,,FALSE
+2026-04-06 16:53:31,Incident Assignment Group,Incident: INC12229952,L3 Support Group,2026-04-06 16:53:31,2026-04-09 16:26:23,257572,TRUE
+2026-04-21 07:37:51,Incident Assignment Group,Incident: INC12229953,L3 Support Group,2026-04-21 07:37:51,2026-04-22 06:19:49,81718,TRUE
+2026-04-15 10:40:22,Incident Assignment Group,Incident: INC12229954,L3 Support Group,2026-04-15 10:40:22,2026-04-15 18:53:29,29587,TRUE
+2026-04-20 08:33:39,Incident Assignment Group,Incident: INC12229955,L3 Support Group,2026-04-20 08:33:39,2026-04-22 14:53:27,195588,TRUE
+2026-04-12 11:04:34,Incident Assignment Group,Incident: INC12229956,L3 Support Group,2026-04-12 11:04:34,,,FALSE
+2026-04-03 03:35:00,Incident Assignment Group,Incident: INC12229957,L3 Support Group,2026-04-03 03:35:00,2026-04-03 09:13:20,20300,TRUE
+2026-04-28 08:09:25,Incident Assignment Group,Incident: INC12229958,L3 Support Group,2026-04-28 08:09:25,2026-04-29 01:34:13,62688,TRUE
+2026-04-07 02:48:24,Incident Assignment Group,Incident: INC12229959,L3 Support Group,2026-04-07 02:48:24,,,FALSE
+2026-04-03 01:17:49,Incident Assignment Group,Incident: INC12229960,L3 Support Group,2026-04-03 01:17:49,,,FALSE
+2026-04-17 02:02:59,Incident Assignment Group,Incident: INC12229961,L3 Support Group,2026-04-17 02:02:59,2026-04-17 19:34:43,63104,TRUE
+2026-04-26 03:05:33,Incident Assignment Group,Incident: INC12229962,L3 Support Group,2026-04-26 03:05:33,,,FALSE
+2026-04-03 07:55:52,Incident Assignment Group,Incident: INC12229963,L3 Support Group,2026-04-03 07:55:52,2026-04-04 15:44:14,114502,TRUE
+2026-04-03 19:56:32,Incident Assignment Group,Incident: INC12229964,L3 Support Group,2026-04-03 19:56:32,2026-04-04 13:09:40,61988,TRUE
+2026-04-16 15:02:25,Incident Assignment Group,Incident: INC12229965,L3 Support Group,2026-04-16 15:02:25,2026-04-17 04:29:19,48414,TRUE
+2026-04-18 17:56:45,Incident Assignment Group,Incident: INC12229966,L3 Support Group,2026-04-18 17:56:45,2026-04-19 15:19:24,76959,TRUE
+2026-04-21 05:45:07,Incident Assignment Group,Incident: INC12229967,L3 Support Group,2026-04-21 05:45:07,2026-04-23 11:10:23,192316,TRUE
+2026-04-03 13:56:14,Incident Assignment Group,Incident: INC12229968,L3 Support Group,2026-04-03 13:56:14,,,FALSE
+2026-04-25 23:53:43,Incident Assignment Group,Incident: INC12229969,L3 Support Group,2026-04-25 23:53:43,2026-04-28 18:07:30,238427,TRUE
+2026-04-27 07:43:28,Incident Assignment Group,Incident: INC12229970,L3 Support Group,2026-04-27 07:43:28,2026-04-27 19:27:56,42268,TRUE
+2026-04-22 11:35:19,Incident Assignment Group,Incident: INC12229971,L3 Support Group,2026-04-22 11:35:19,2026-04-23 05:45:11,65392,TRUE
+2026-04-08 14:53:00,Incident Assignment Group,Incident: INC12229972,L3 Support Group,2026-04-08 14:53:00,,,FALSE
+2026-04-25 07:26:12,Incident Assignment Group,Incident: INC12229973,L3 Support Group,2026-04-25 07:26:12,,,FALSE
+2026-04-10 07:16:59,Incident Assignment Group,Incident: INC12229974,L3 Support Group,2026-04-10 07:16:59,,,FALSE
+2026-04-13 02:12:32,Incident Assignment Group,Incident: INC12229975,L3 Support Group,2026-04-13 02:12:32,2026-04-14 16:10:05,136653,TRUE
+2026-04-02 05:31:45,Incident Assignment Group,Incident: INC12229976,L3 Support Group,2026-04-02 05:31:45,,,FALSE
+2026-04-05 21:56:46,Incident Assignment Group,Incident: INC12229977,L3 Support Group,2026-04-05 21:56:46,2026-04-07 23:23:26,178000,TRUE
+2026-04-16 23:49:50,Incident Assignment Group,Incident: INC12229978,L3 Support Group,2026-04-16 23:49:50,,,FALSE
+2026-04-23 15:43:26,Incident Assignment Group,Incident: INC12229979,L3 Support Group,2026-04-23 15:43:26,2026-04-23 18:04:32,8466,TRUE
+2026-04-23 23:25:41,Incident Assignment Group,Incident: INC12229980,L3 Support Group,2026-04-23 23:25:41,2026-04-25 04:06:10,103229,TRUE
+2026-04-03 02:58:13,Incident Assignment Group,Incident: INC12229981,L3 Support Group,2026-04-03 02:58:13,2026-04-06 00:43:57,251144,TRUE
+2026-04-24 04:23:54,Incident Assignment Group,Incident: INC12229982,L3 Support Group,2026-04-24 04:23:54,,,FALSE
+2026-04-04 02:44:32,Incident Assignment Group,Incident: INC12229983,L3 Support Group,2026-04-04 02:44:32,,,FALSE
+2026-04-25 14:58:56,Incident Assignment Group,Incident: INC12229984,L3 Support Group,2026-04-25 14:58:56,2026-04-27 03:35:10,131774,TRUE
+2026-04-24 22:10:02,Incident Assignment Group,Incident: INC12229985,L3 Support Group,2026-04-24 22:10:02,2026-04-26 19:36:36,163594,TRUE
+2026-04-22 02:46:59,Incident Assignment Group,Incident: INC12229986,L3 Support Group,2026-04-22 02:46:59,,,FALSE
+2026-04-07 19:19:15,Incident Assignment Group,Incident: INC12229987,L3 Support Group,2026-04-07 19:19:15,2026-04-08 21:30:48,94293,TRUE
+2026-04-15 11:15:27,Incident Assignment Group,Incident: INC12229988,L3 Support Group,2026-04-15 11:15:27,2026-04-18 09:38:57,253410,TRUE
+2026-04-13 05:25:58,Incident Assignment Group,Incident: INC12229989,L3 Support Group,2026-04-13 05:25:58,2026-04-15 18:36:49,220251,TRUE
+2026-04-05 10:27:53,Incident Assignment Group,Incident: INC12229990,L3 Support Group,2026-04-05 10:27:53,2026-04-07 02:54:44,145611,TRUE
+2026-04-04 09:19:19,Incident Assignment Group,Incident: INC12229991,L3 Support Group,2026-04-04 09:19:19,2026-04-06 06:12:18,161579,TRUE
+2026-04-07 23:25:37,Incident Assignment Group,Incident: INC12229992,L3 Support Group,2026-04-07 23:25:37,2026-04-09 17:07:03,150086,TRUE
+2026-04-18 08:20:40,Incident Assignment Group,Incident: INC12229993,L3 Support Group,2026-04-18 08:20:40,,,FALSE
+2026-04-27 12:50:43,Incident Assignment Group,Incident: INC12229994,L3 Support Group,2026-04-27 12:50:43,2026-04-30 04:24:51,228848,TRUE
+2026-04-25 05:01:59,Incident Assignment Group,Incident: INC12229995,L3 Support Group,2026-04-25 05:01:59,2026-04-28 00:25:51,242632,TRUE
+2026-04-17 01:17:48,Incident Assignment Group,Incident: INC12229996,L3 Support Group,2026-04-17 01:17:48,2026-04-18 16:33:20,141332,TRUE
+2026-04-14 22:58:26,Incident Assignment Group,Incident: INC12229997,L3 Support Group,2026-04-14 22:58:26,,,FALSE
+2026-04-13 01:08:33,Incident Assignment Group,Incident: INC12229998,L3 Support Group,2026-04-13 01:08:33,2026-04-14 11:35:31,124018,TRUE
+2026-04-18 15:31:51,Incident Assignment Group,Incident: INC12229999,L3 Support Group,2026-04-18 15:31:51,,,FALSE
+2026-04-17 23:45:09,Incident Assignment Group,Incident: INC12230000,L3 Support Group,2026-04-17 23:45:09,2026-04-20 15:42:44,230255,TRUE
+2026-04-17 20:55:57,Incident Assignment Group,Incident: INC12230001,L3 Support Group,2026-04-17 20:55:57,,,FALSE
+2026-04-03 07:58:02,Incident Assignment Group,Incident: INC12230002,L3 Support Group,2026-04-03 07:58:02,,,FALSE
+2026-04-25 04:23:18,Incident Assignment Group,Incident: INC12230003,L3 Support Group,2026-04-25 04:23:18,,,FALSE
+2026-04-26 06:34:08,Incident Assignment Group,Incident: INC12230004,L3 Support Group,2026-04-26 06:34:08,2026-04-28 14:35:56,201708,TRUE
+2026-04-17 22:18:36,Incident Assignment Group,Incident: INC12230005,L3 Support Group,2026-04-17 22:18:36,2026-04-20 12:43:30,224694,TRUE
+2026-04-14 04:41:22,Incident Assignment Group,Incident: INC12230006,L3 Support Group,2026-04-14 04:41:22,2026-04-15 11:04:36,109394,TRUE
+2026-04-16 18:08:23,Incident Assignment Group,Incident: INC12230007,L3 Support Group,2026-04-16 18:08:23,2026-04-16 21:34:58,12395,TRUE
+2026-04-20 18:01:18,Incident Assignment Group,Incident: INC12230008,L3 Support Group,2026-04-20 18:01:18,,,FALSE
+2026-04-02 10:57:28,Incident Assignment Group,Incident: INC12230009,L3 Support Group,2026-04-02 10:57:28,,,FALSE
+2026-04-04 04:40:31,Incident Assignment Group,Incident: INC12230010,L3 Support Group,2026-04-04 04:40:31,,,FALSE
+2026-04-06 14:29:09,Incident Assignment Group,Incident: INC12230011,L3 Support Group,2026-04-06 14:29:09,2026-04-08 10:51:25,159736,TRUE
+2026-04-12 01:11:24,Incident Assignment Group,Incident: INC12230012,L3 Support Group,2026-04-12 01:11:24,2026-04-13 03:40:38,95354,TRUE
+2026-04-14 23:37:11,Incident Assignment Group,Incident: INC12230013,L3 Support Group,2026-04-14 23:37:11,2026-04-17 19:43:40,245189,TRUE
+2026-04-14 03:47:00,Incident Assignment Group,Incident: INC12230014,L3 Support Group,2026-04-14 03:47:00,2026-04-14 23:02:09,69309,TRUE
+2026-04-13 09:03:41,Incident Assignment Group,Incident: INC12230015,L3 Support Group,2026-04-13 09:03:41,2026-04-14 08:41:55,85094,TRUE
+2026-04-13 07:40:37,Incident Assignment Group,Incident: INC12230016,L3 Support Group,2026-04-13 07:40:37,2026-04-14 03:10:56,70219,TRUE
+2026-04-14 00:40:57,Incident Assignment Group,Incident: INC12230017,L3 Support Group,2026-04-14 00:40:57,2026-04-15 13:13:57,131580,TRUE
+2026-04-21 14:35:32,Incident Assignment Group,Incident: INC12230018,L3 Support Group,2026-04-21 14:35:32,2026-04-21 16:57:40,8528,TRUE
+2026-04-28 19:01:03,Incident Assignment Group,Incident: INC12230019,L3 Support Group,2026-04-28 19:01:03,,,FALSE
+2026-04-12 02:26:38,Incident Assignment Group,Incident: INC12230020,L3 Support Group,2026-04-12 02:26:38,,,FALSE
+2026-04-28 18:04:11,Incident Assignment Group,Incident: INC12230021,L3 Support Group,2026-04-28 18:04:11,2026-04-29 03:43:38,34767,TRUE
+2026-04-15 21:23:21,Incident Assignment Group,Incident: INC12230022,L3 Support Group,2026-04-15 21:23:21,2026-04-17 05:07:56,114275,TRUE
+2026-04-09 02:01:04,Incident Assignment Group,Incident: INC12230023,L3 Support Group,2026-04-09 02:01:04,,,FALSE
+2026-04-12 05:59:54,Incident Assignment Group,Incident: INC12230024,L3 Support Group,2026-04-12 05:59:54,2026-04-12 17:48:01,42487,TRUE
+2026-04-06 08:49:26,Incident Assignment Group,Incident: INC12230025,L3 Support Group,2026-04-06 08:49:26,2026-04-08 10:23:26,178440,TRUE
+2026-04-22 14:19:00,Incident Assignment Group,Incident: INC12230026,L3 Support Group,2026-04-22 14:19:00,2026-04-25 01:45:36,213996,TRUE
+2026-04-23 00:39:25,Incident Assignment Group,Incident: INC12230027,L3 Support Group,2026-04-23 00:39:25,2026-04-24 11:24:09,125084,TRUE
+2026-04-04 19:10:40,Incident Assignment Group,Incident: INC12230028,L3 Support Group,2026-04-04 19:10:40,2026-04-05 10:40:58,55818,TRUE
+2026-04-11 05:55:22,Incident Assignment Group,Incident: INC12230029,L3 Support Group,2026-04-11 05:55:22,2026-04-12 03:16:21,76859,TRUE
+2026-04-25 15:21:42,Incident Assignment Group,Incident: INC12230030,L3 Support Group,2026-04-25 15:21:42,2026-04-26 23:28:53,115631,TRUE
+2026-04-05 17:26:58,Incident Assignment Group,Incident: INC12230031,L3 Support Group,2026-04-05 17:26:58,,,FALSE
+2026-04-06 12:10:00,Incident Assignment Group,Incident: INC12230032,L3 Support Group,2026-04-06 12:10:00,2026-04-07 16:17:27,101247,TRUE
+2026-04-07 17:33:07,Incident Assignment Group,Incident: INC12230033,L3 Support Group,2026-04-07 17:33:07,2026-04-10 03:31:24,208697,TRUE
+2026-04-06 08:18:32,Incident Assignment Group,Incident: INC12230034,L3 Support Group,2026-04-06 08:18:32,,,FALSE
+2026-04-15 21:05:06,Incident Assignment Group,Incident: INC12230035,L3 Support Group,2026-04-15 21:05:06,2026-04-17 10:35:50,135044,TRUE
+2026-04-20 10:57:24,Incident Assignment Group,Incident: INC12230036,L3 Support Group,2026-04-20 10:57:24,2026-04-21 09:20:32,80588,TRUE
+2026-04-07 05:40:06,Incident Assignment Group,Incident: INC12230037,L3 Support Group,2026-04-07 05:40:06,2026-04-08 19:55:20,137714,TRUE
+2026-04-25 21:07:08,Incident Assignment Group,Incident: INC12230038,L3 Support Group,2026-04-25 21:07:08,,,FALSE
+2026-04-12 04:22:13,Incident Assignment Group,Incident: INC12230039,L3 Support Group,2026-04-12 04:22:13,2026-04-14 20:02:04,229191,TRUE
+2026-04-18 16:37:02,Incident Assignment Group,Incident: INC12230040,L3 Support Group,2026-04-18 16:37:02,2026-04-21 12:45:50,245328,TRUE
+2026-04-25 19:09:00,Incident Assignment Group,Incident: INC12230041,L3 Support Group,2026-04-25 19:09:00,2026-04-27 18:45:38,171398,TRUE
+2026-04-15 22:26:20,Incident Assignment Group,Incident: INC12230042,L3 Support Group,2026-04-15 22:26:20,2026-04-18 17:46:58,242438,TRUE
+2026-04-17 22:17:43,Incident Assignment Group,Incident: INC12230043,L3 Support Group,2026-04-17 22:17:43,2026-04-18 11:39:46,48123,TRUE
+2026-04-05 03:37:24,Incident Assignment Group,Incident: INC12230044,L3 Support Group,2026-04-05 03:37:24,2026-04-07 23:48:54,245490,TRUE
+2026-04-03 01:44:49,Incident Assignment Group,Incident: INC12230045,L3 Support Group,2026-04-03 01:44:49,2026-04-03 17:20:48,56159,TRUE
+2026-04-26 19:37:42,Incident Assignment Group,Incident: INC12230046,L3 Support Group,2026-04-26 19:37:42,,,FALSE
+2026-04-26 14:28:36,Incident Assignment Group,Incident: INC12230047,L3 Support Group,2026-04-26 14:28:36,,,FALSE
+2026-04-13 02:03:48,Incident Assignment Group,Incident: INC12230048,L3 Support Group,2026-04-13 02:03:48,2026-04-13 14:54:38,46250,TRUE
+2026-04-07 22:18:12,Incident Assignment Group,Incident: INC12230049,L3 Support Group,2026-04-07 22:18:12,,,FALSE
+2026-04-12 19:57:36,Incident Assignment Group,Incident: INC12230050,L3 Support Group,2026-04-12 19:57:36,,,FALSE
+2026-04-17 22:45:59,Incident Assignment Group,Incident: INC12230051,L3 Support Group,2026-04-17 22:45:59,,,FALSE
+2026-04-08 22:32:58,Incident Assignment Group,Incident: INC12230052,L3 Support Group,2026-04-08 22:32:58,,,FALSE
+2026-04-17 04:54:41,Incident Assignment Group,Incident: INC12230053,L3 Support Group,2026-04-17 04:54:41,2026-04-18 13:16:29,116508,TRUE
+2026-04-05 14:00:26,Incident Assignment Group,Incident: INC12230054,L3 Support Group,2026-04-05 14:00:26,,,FALSE
+2026-04-07 08:19:02,Incident Assignment Group,Incident: INC12230055,L3 Support Group,2026-04-07 08:19:02,2026-04-07 13:35:01,18959,TRUE
+2026-04-17 00:35:58,Incident Assignment Group,Incident: INC12230056,L3 Support Group,2026-04-17 00:35:58,2026-04-18 03:08:47,95569,TRUE
+2026-04-21 09:36:12,Incident Assignment Group,Incident: INC12230057,L3 Support Group,2026-04-21 09:36:12,2026-04-23 04:23:14,154022,TRUE
+2026-04-06 15:54:10,Incident Assignment Group,Incident: INC12230058,L3 Support Group,2026-04-06 15:54:10,,,FALSE
+2026-04-05 09:21:10,Incident Assignment Group,Incident: INC12230059,L3 Support Group,2026-04-05 09:21:10,2026-04-07 18:43:38,206548,TRUE
+2026-04-18 20:10:14,Incident Assignment Group,Incident: INC12230060,L3 Support Group,2026-04-18 20:10:14,2026-04-19 18:46:17,81363,TRUE
+2026-04-17 00:08:32,Incident Assignment Group,Incident: INC12230061,L3 Support Group,2026-04-17 00:08:32,2026-04-19 13:46:02,221850,TRUE
+2026-04-14 10:39:30,Incident Assignment Group,Incident: INC12230062,L3 Support Group,2026-04-14 10:39:30,,,FALSE
+2026-04-20 13:58:35,Incident Assignment Group,Incident: INC12230063,L3 Support Group,2026-04-20 13:58:35,,,FALSE
+2026-04-08 07:36:17,Incident Assignment Group,Incident: INC12230064,L3 Support Group,2026-04-08 07:36:17,,,FALSE
+2026-04-14 23:16:59,Incident Assignment Group,Incident: INC12230065,L3 Support Group,2026-04-14 23:16:59,,,FALSE
+2026-04-18 16:10:16,Incident Assignment Group,Incident: INC12230066,L3 Support Group,2026-04-18 16:10:16,,,FALSE
+2026-04-17 04:38:03,Incident Assignment Group,Incident: INC12230067,L3 Support Group,2026-04-17 04:38:03,,,FALSE
+2026-04-14 09:10:11,Incident Assignment Group,Incident: INC12230068,L3 Support Group,2026-04-14 09:10:11,2026-04-16 21:56:33,218782,TRUE
+2026-04-17 14:04:44,Incident Assignment Group,Incident: INC12230069,L3 Support Group,2026-04-17 14:04:44,2026-04-20 10:54:58,247814,TRUE
+2026-04-05 06:31:53,Incident Assignment Group,Incident: INC12230070,L3 Support Group,2026-04-05 06:31:53,2026-04-05 17:45:07,40394,TRUE
+2026-04-16 18:37:38,Incident Assignment Group,Incident: INC12230071,L3 Support Group,2026-04-16 18:37:38,,,FALSE
+2026-04-27 17:16:57,Incident Assignment Group,Incident: INC12230072,L3 Support Group,2026-04-27 17:16:57,2026-04-28 11:43:23,66386,TRUE
+2026-04-13 02:17:02,Incident Assignment Group,Incident: INC12230073,L3 Support Group,2026-04-13 02:17:02,2026-04-15 08:04:00,193618,TRUE
+2026-04-09 04:52:56,Incident Assignment Group,Incident: INC12230074,L3 Support Group,2026-04-09 04:52:56,2026-04-09 22:55:48,64972,TRUE
+2026-04-04 18:53:28,Incident Assignment Group,Incident: INC12230075,L3 Support Group,2026-04-04 18:53:28,2026-04-04 21:08:33,8105,TRUE
+2026-04-20 05:46:18,Incident Assignment Group,Incident: INC12230076,L3 Support Group,2026-04-20 05:46:18,2026-04-21 05:33:36,85638,TRUE
+2026-04-03 06:35:43,Incident Assignment Group,Incident: INC12230077,L3 Support Group,2026-04-03 06:35:43,,,FALSE
+2026-04-10 01:52:04,Incident Assignment Group,Incident: INC12230078,L3 Support Group,2026-04-10 01:52:04,2026-04-10 17:22:47,55843,TRUE
+2026-04-25 09:11:18,Incident Assignment Group,Incident: INC12230079,L3 Support Group,2026-04-25 09:11:18,,,FALSE
+2026-04-09 04:45:28,Incident Assignment Group,Incident: INC12230080,L3 Support Group,2026-04-09 04:45:28,,,FALSE
+2026-04-02 04:01:37,Incident Assignment Group,Incident: INC12230081,L3 Support Group,2026-04-02 04:01:37,,,FALSE
+2026-04-13 23:26:46,Incident Assignment Group,Incident: INC12230082,L3 Support Group,2026-04-13 23:26:46,2026-04-16 18:03:04,239778,TRUE
+2026-04-08 17:26:34,Incident Assignment Group,Incident: INC12230083,L3 Support Group,2026-04-08 17:26:34,2026-04-09 10:18:23,60709,TRUE
+2026-04-16 14:07:25,Incident Assignment Group,Incident: INC12230084,L3 Support Group,2026-04-16 14:07:25,,,FALSE
+2026-04-03 12:04:36,Incident Assignment Group,Incident: INC12230085,L3 Support Group,2026-04-03 12:04:36,,,FALSE
+2026-04-01 19:40:03,Incident Assignment Group,Incident: INC12230086,L3 Support Group,2026-04-01 19:40:03,,,FALSE
+2026-04-16 20:27:46,Incident Assignment Group,Incident: INC12230087,L3 Support Group,2026-04-16 20:27:46,,,FALSE
+2026-04-13 01:20:42,Incident Assignment Group,Incident: INC12230088,L3 Support Group,2026-04-13 01:20:42,,,FALSE
+2026-04-12 21:15:14,Incident Assignment Group,Incident: INC12230089,L3 Support Group,2026-04-12 21:15:14,2026-04-15 01:45:01,188987,TRUE
+2026-04-19 01:09:12,Incident Assignment Group,Incident: INC12230090,L3 Support Group,2026-04-19 01:09:12,2026-04-20 16:43:57,142485,TRUE
+2026-04-03 12:52:22,Incident Assignment Group,Incident: INC12230091,L3 Support Group,2026-04-03 12:52:22,2026-04-04 01:10:26,44284,TRUE
+2026-04-03 15:55:43,Incident Assignment Group,Incident: INC12230092,L3 Support Group,2026-04-03 15:55:43,2026-04-06 05:35:38,221995,TRUE
+2026-04-04 20:15:11,Incident Assignment Group,Incident: INC12230093,L3 Support Group,2026-04-04 20:15:11,2026-04-06 16:37:11,159720,TRUE
+2026-04-08 15:32:11,Incident Assignment Group,Incident: INC12230094,L3 Support Group,2026-04-08 15:32:11,2026-04-11 04:30:44,219513,TRUE
+2026-04-13 04:33:27,Incident Assignment Group,Incident: INC12230095,L3 Support Group,2026-04-13 04:33:27,2026-04-13 08:54:15,15648,TRUE
+2026-04-23 03:25:31,Incident Assignment Group,Incident: INC12230096,L3 Support Group,2026-04-23 03:25:31,2026-04-23 17:26:35,50464,TRUE
+2026-04-20 03:45:30,Incident Assignment Group,Incident: INC12230097,L3 Support Group,2026-04-20 03:45:30,,,FALSE
+2026-04-23 14:11:47,Incident Assignment Group,Incident: INC12230098,L3 Support Group,2026-04-23 14:11:47,2026-04-23 15:15:08,3801,TRUE
+2026-04-09 05:18:04,Incident Assignment Group,Incident: INC12230099,L3 Support Group,2026-04-09 05:18:04,2026-04-11 13:54:31,203787,TRUE
+2026-04-17 12:01:04,Incident Assignment Group,Incident: INC12230100,L3 Support Group,2026-04-17 12:01:04,2026-04-19 01:33:49,135165,TRUE
+2026-04-02 17:44:14,Incident Assignment Group,Incident: INC12230101,L3 Support Group,2026-04-02 17:44:14,2026-04-04 22:43:04,190730,TRUE
+2026-04-02 17:22:10,Incident Assignment Group,Incident: INC12230102,L3 Support Group,2026-04-02 17:22:10,2026-04-03 18:49:34,91644,TRUE
+2026-04-22 17:18:47,Incident Assignment Group,Incident: INC12230103,L3 Support Group,2026-04-22 17:18:47,2026-04-23 13:24:05,72318,TRUE
+2026-04-17 17:26:32,Incident Assignment Group,Incident: INC12230104,L3 Support Group,2026-04-17 17:26:32,2026-04-18 01:57:20,30648,TRUE
+2026-04-21 03:53:49,Incident Assignment Group,Incident: INC12230105,L3 Support Group,2026-04-21 03:53:49,2026-04-23 07:49:27,186938,TRUE
+2026-04-25 00:09:23,Incident Assignment Group,Incident: INC12230106,L3 Support Group,2026-04-25 00:09:23,2026-04-27 00:39:35,174612,TRUE
+2026-04-09 09:07:09,Incident Assignment Group,Incident: INC12230107,L3 Support Group,2026-04-09 09:07:09,2026-04-11 20:10:37,212608,TRUE
+2026-04-18 10:28:19,Incident Assignment Group,Incident: INC12230108,L3 Support Group,2026-04-18 10:28:19,2026-04-20 00:27:31,136752,TRUE
+2026-04-04 16:06:25,Incident Assignment Group,Incident: INC12230109,L3 Support Group,2026-04-04 16:06:25,,,FALSE
+2026-04-01 16:56:58,Incident Assignment Group,Incident: INC12230110,L3 Support Group,2026-04-01 16:56:58,,,FALSE
+2026-04-27 12:36:56,Incident Assignment Group,Incident: INC12230111,L3 Support Group,2026-04-27 12:36:56,,,FALSE
+2026-04-13 22:41:55,Incident Assignment Group,Incident: INC12230112,L3 Support Group,2026-04-13 22:41:55,,,FALSE
+2026-04-09 09:50:29,Incident Assignment Group,Incident: INC12230113,L3 Support Group,2026-04-09 09:50:29,,,FALSE
+2026-04-23 00:12:28,Incident Assignment Group,Incident: INC12230114,L3 Support Group,2026-04-23 00:12:28,,,FALSE
+2026-04-12 04:56:44,Incident Assignment Group,Incident: INC12230115,L3 Support Group,2026-04-12 04:56:44,2026-04-14 15:09:24,209560,TRUE
+2026-04-01 07:44:18,Incident Assignment Group,Incident: INC12230116,L3 Support Group,2026-04-01 07:44:18,,,FALSE
+2026-04-28 00:02:07,Incident Assignment Group,Incident: INC12230117,L3 Support Group,2026-04-28 00:02:07,2026-04-28 08:03:55,28908,TRUE
+2026-04-26 17:53:45,Incident Assignment Group,Incident: INC12230118,L3 Support Group,2026-04-26 17:53:45,2026-04-28 06:18:07,131062,TRUE
+2026-04-18 09:27:03,Incident Assignment Group,Incident: INC12230119,L3 Support Group,2026-04-18 09:27:03,,,FALSE
+2026-04-12 04:25:47,Incident Assignment Group,Incident: INC12230120,L3 Support Group,2026-04-12 04:25:47,2026-04-14 17:54:43,221336,TRUE
+2026-04-11 20:47:14,Incident Assignment Group,Incident: INC12230121,L3 Support Group,2026-04-11 20:47:14,2026-04-14 16:11:57,242683,TRUE
+2026-04-24 03:19:05,Incident Assignment Group,Incident: INC12230122,L3 Support Group,2026-04-24 03:19:05,2026-04-26 22:50:45,243100,TRUE
+2026-04-20 05:58:14,Incident Assignment Group,Incident: INC12230123,L3 Support Group,2026-04-20 05:58:14,2026-04-21 11:01:39,104605,TRUE
+2026-04-01 00:19:36,Incident Assignment Group,Incident: INC12230124,L3 Support Group,2026-04-01 00:19:36,2026-04-03 09:05:18,204342,TRUE
+2026-04-05 02:09:47,Incident Assignment Group,Incident: INC12230125,L3 Support Group,2026-04-05 02:09:47,,,FALSE
+2026-04-08 22:30:56,Incident Assignment Group,Incident: INC12230126,L3 Support Group,2026-04-08 22:30:56,,,FALSE
+2026-04-25 14:58:50,Incident Assignment Group,Incident: INC12230127,L3 Support Group,2026-04-25 14:58:50,,,FALSE
+2026-04-06 22:12:17,Incident Assignment Group,Incident: INC12230128,L3 Support Group,2026-04-06 22:12:17,2026-04-07 00:58:30,9973,TRUE
+2026-04-06 13:39:10,Incident Assignment Group,Incident: INC12230129,L3 Support Group,2026-04-06 13:39:10,2026-04-08 05:50:23,144673,TRUE
+2026-04-18 19:53:42,Incident Assignment Group,Incident: INC12230130,L3 Support Group,2026-04-18 19:53:42,2026-04-21 06:51:06,212244,TRUE
+2026-04-27 12:53:17,Incident Assignment Group,Incident: INC12230131,L3 Support Group,2026-04-27 12:53:17,,,FALSE
+2026-04-06 19:24:41,Incident Assignment Group,Incident: INC12230132,L3 Support Group,2026-04-06 19:24:41,2026-04-07 01:26:37,21716,TRUE
+2026-04-02 09:48:42,Incident Assignment Group,Incident: INC12230133,L3 Support Group,2026-04-02 09:48:42,,,FALSE
+2026-04-07 23:55:33,Incident Assignment Group,Incident: INC12230134,L3 Support Group,2026-04-07 23:55:33,,,FALSE
+2026-04-28 10:57:23,Incident Assignment Group,Incident: INC12230135,L3 Support Group,2026-04-28 10:57:23,,,FALSE
+2026-04-05 18:04:50,Incident Assignment Group,Incident: INC12230136,L3 Support Group,2026-04-05 18:04:50,,,FALSE
+2026-04-23 01:26:57,Incident Assignment Group,Incident: INC12230137,L3 Support Group,2026-04-23 01:26:57,,,FALSE
+2026-04-03 19:31:13,Incident Assignment Group,Incident: INC12230138,L3 Support Group,2026-04-03 19:31:13,,,FALSE
+2026-04-25 01:42:01,Incident Assignment Group,Incident: INC12230139,L3 Support Group,2026-04-25 01:42:01,2026-04-26 23:46:17,165856,TRUE
+2026-04-22 00:24:31,Incident Assignment Group,Incident: INC12230140,L3 Support Group,2026-04-22 00:24:31,2026-04-23 09:44:26,119995,TRUE
+2026-04-22 06:27:12,Incident Assignment Group,Incident: INC12230141,L3 Support Group,2026-04-22 06:27:12,2026-04-24 18:40:15,216783,TRUE
+2026-04-11 01:35:43,Incident Assignment Group,Incident: INC12230142,L3 Support Group,2026-04-11 01:35:43,,,FALSE
+2026-04-04 06:20:27,Incident Assignment Group,Incident: INC12230143,L3 Support Group,2026-04-04 06:20:27,2026-04-05 04:09:21,78534,TRUE
+2026-04-26 17:32:52,Incident Assignment Group,Incident: INC12230144,L3 Support Group,2026-04-26 17:32:52,2026-04-26 23:02:47,19795,TRUE
+2026-04-11 02:48:59,Incident Assignment Group,Incident: INC12230145,L3 Support Group,2026-04-11 02:48:59,,,FALSE
+2026-04-14 00:10:52,Incident Assignment Group,Incident: INC12230146,L3 Support Group,2026-04-14 00:10:52,2026-04-14 20:20:31,72579,TRUE
+2026-04-24 23:43:55,Incident Assignment Group,Incident: INC12230147,L3 Support Group,2026-04-24 23:43:55,2026-04-25 03:35:33,13898,TRUE
+2026-04-26 20:55:05,Incident Assignment Group,Incident: INC12230148,L3 Support Group,2026-04-26 20:55:05,2026-04-29 10:16:18,220873,TRUE
+2026-04-19 08:24:34,Incident Assignment Group,Incident: INC12230149,L3 Support Group,2026-04-19 08:24:34,,,FALSE
+2026-04-24 16:43:29,Incident Assignment Group,Incident: INC12230150,L3 Support Group,2026-04-24 16:43:29,2026-04-25 20:39:33,100564,TRUE
+2026-04-25 13:18:21,Incident Assignment Group,Incident: INC12230151,L3 Support Group,2026-04-25 13:18:21,,,FALSE
+2026-04-24 12:44:05,Incident Assignment Group,Incident: INC12230152,L3 Support Group,2026-04-24 12:44:05,2026-04-25 02:37:46,50021,TRUE
+2026-04-14 11:06:45,Incident Assignment Group,Incident: INC12230153,L3 Support Group,2026-04-14 11:06:45,,,FALSE
+2026-04-20 10:08:43,Incident Assignment Group,Incident: INC12230154,L3 Support Group,2026-04-20 10:08:43,2026-04-21 19:20:43,119520,TRUE
+2026-04-22 19:35:21,Incident Assignment Group,Incident: INC12230155,L3 Support Group,2026-04-22 19:35:21,,,FALSE
+2026-04-20 16:45:15,Incident Assignment Group,Incident: INC12230156,L3 Support Group,2026-04-20 16:45:15,,,FALSE
+2026-04-26 05:26:31,Incident Assignment Group,Incident: INC12230157,L3 Support Group,2026-04-26 05:26:31,,,FALSE
+2026-04-16 21:06:02,Incident Assignment Group,Incident: INC12230158,L3 Support Group,2026-04-16 21:06:02,2026-04-18 20:30:15,170653,TRUE
+2026-04-06 03:04:49,Incident Assignment Group,Incident: INC12230159,L3 Support Group,2026-04-06 03:04:49,,,FALSE
+2026-04-06 19:02:26,Incident Assignment Group,Incident: INC12230160,L3 Support Group,2026-04-06 19:02:26,2026-04-09 18:00:22,255476,TRUE
+2026-04-17 23:27:58,Incident Assignment Group,Incident: INC12230161,L3 Support Group,2026-04-17 23:27:58,2026-04-18 19:14:38,71200,TRUE
+2026-04-01 15:02:52,Incident Assignment Group,Incident: INC12230162,L3 Support Group,2026-04-01 15:02:52,,,FALSE
+2026-04-26 09:23:55,Incident Assignment Group,Incident: INC12230163,L3 Support Group,2026-04-26 09:23:55,2026-04-28 00:20:21,140186,TRUE
+2026-04-07 23:37:37,Incident Assignment Group,Incident: INC12230164,L3 Support Group,2026-04-07 23:37:37,2026-04-09 00:01:03,87806,TRUE
+2026-04-22 04:22:01,Incident Assignment Group,Incident: INC12230165,L3 Support Group,2026-04-22 04:22:01,2026-04-24 05:39:07,177426,TRUE
+2026-04-25 15:24:12,Incident Assignment Group,Incident: INC12230166,L3 Support Group,2026-04-25 15:24:12,,,FALSE
+2026-04-07 08:51:09,Incident Assignment Group,Incident: INC12230167,L3 Support Group,2026-04-07 08:51:09,,,FALSE
+2026-04-13 07:29:32,Incident Assignment Group,Incident: INC12230168,L3 Support Group,2026-04-13 07:29:32,2026-04-16 02:22:02,240750,TRUE
+2026-04-20 07:04:02,Incident Assignment Group,Incident: INC12230169,L3 Support Group,2026-04-20 07:04:02,2026-04-21 16:37:35,120813,TRUE
+2026-04-20 22:47:19,Incident Assignment Group,Incident: INC12230170,L3 Support Group,2026-04-20 22:47:19,,,FALSE
+2026-04-28 21:32:37,Incident Assignment Group,Incident: INC12230171,L3 Support Group,2026-04-28 21:32:37,,,FALSE
+2026-04-18 16:39:57,Incident Assignment Group,Incident: INC12230172,L3 Support Group,2026-04-18 16:39:57,,,FALSE
+2026-04-19 12:44:45,Incident Assignment Group,Incident: INC12230173,L3 Support Group,2026-04-19 12:44:45,2026-04-20 00:01:24,40599,TRUE
+2026-04-09 08:15:59,Incident Assignment Group,Incident: INC12230174,L3 Support Group,2026-04-09 08:15:59,,,FALSE
+2026-04-18 22:42:40,Incident Assignment Group,Incident: INC12230175,L3 Support Group,2026-04-18 22:42:40,2026-04-21 05:01:15,195515,TRUE
+2026-04-06 23:38:58,Incident Assignment Group,Incident: INC12230176,L3 Support Group,2026-04-06 23:38:58,,,FALSE
+2026-04-09 00:23:17,Incident Assignment Group,Incident: INC12230177,L3 Support Group,2026-04-09 00:23:17,,,FALSE
+2026-04-21 20:21:26,Incident Assignment Group,Incident: INC12230178,L3 Support Group,2026-04-21 20:21:26,2026-04-22 15:39:50,69504,TRUE
+2026-04-25 05:38:43,Incident Assignment Group,Incident: INC12230179,L3 Support Group,2026-04-25 05:38:43,2026-04-27 04:20:13,168090,TRUE
+2026-04-14 16:53:26,Incident Assignment Group,Incident: INC12230180,L3 Support Group,2026-04-14 16:53:26,,,FALSE
+2026-04-17 15:08:18,Incident Assignment Group,Incident: INC12230181,L3 Support Group,2026-04-17 15:08:18,2026-04-19 21:03:53,194135,TRUE
+2026-04-11 09:33:06,Incident Assignment Group,Incident: INC12230182,L3 Support Group,2026-04-11 09:33:06,2026-04-13 03:29:22,150976,TRUE
+2026-04-15 16:28:39,Incident Assignment Group,Incident: INC12230183,L3 Support Group,2026-04-15 16:28:39,,,FALSE
+2026-04-23 09:28:27,Incident Assignment Group,Incident: INC12230184,L3 Support Group,2026-04-23 09:28:27,2026-04-25 18:53:38,206711,TRUE
+2026-04-14 02:11:39,Incident Assignment Group,Incident: INC12230185,L3 Support Group,2026-04-14 02:11:39,,,FALSE
+2026-04-21 09:56:27,Incident Assignment Group,Incident: INC12230186,L3 Support Group,2026-04-21 09:56:27,2026-04-24 02:30:59,232472,TRUE
+2026-04-10 15:24:28,Incident Assignment Group,Incident: INC12230187,L3 Support Group,2026-04-10 15:24:28,2026-04-11 12:29:40,75912,TRUE
+2026-04-17 00:43:28,Incident Assignment Group,Incident: INC12230188,L3 Support Group,2026-04-17 00:43:28,2026-04-18 09:36:03,118355,TRUE
+2026-04-24 00:32:03,Incident Assignment Group,Incident: INC12230189,L3 Support Group,2026-04-24 00:32:03,2026-04-27 00:15:03,258180,TRUE
+2026-04-10 06:46:23,Incident Assignment Group,Incident: INC12230190,L3 Support Group,2026-04-10 06:46:23,2026-04-12 16:53:35,209232,TRUE
+2026-04-18 04:36:22,Incident Assignment Group,Incident: INC12230191,L3 Support Group,2026-04-18 04:36:22,,,FALSE
+2026-04-21 11:45:32,Incident Assignment Group,Incident: INC12230192,L3 Support Group,2026-04-21 11:45:32,2026-04-22 15:31:21,99949,TRUE
+2026-04-01 17:01:04,Incident Assignment Group,Incident: INC12230193,L3 Support Group,2026-04-01 17:01:04,2026-04-04 03:23:08,210124,TRUE
+2026-04-04 16:03:59,Incident Assignment Group,Incident: INC12230194,L3 Support Group,2026-04-04 16:03:59,2026-04-05 10:15:46,65507,TRUE
+2026-04-25 11:14:39,Incident Assignment Group,Incident: INC12230195,L3 Support Group,2026-04-25 11:14:39,,,FALSE
+2026-04-04 04:42:44,Incident Assignment Group,Incident: INC12230196,L3 Support Group,2026-04-04 04:42:44,,,FALSE
+2026-04-05 14:47:17,Incident Assignment Group,Incident: INC12230197,L3 Support Group,2026-04-05 14:47:17,2026-04-08 00:29:44,207747,TRUE
+2026-04-09 15:43:37,Incident Assignment Group,Incident: INC12230198,L3 Support Group,2026-04-09 15:43:37,,,FALSE
+2026-04-02 08:30:48,Incident Assignment Group,Incident: INC12230199,L3 Support Group,2026-04-02 08:30:48,,,FALSE
+2026-04-03 14:16:37,Incident Assignment Group,Incident: INC12230200,L3 Support Group,2026-04-03 14:16:37,2026-04-05 07:14:06,147449,TRUE
+2026-04-08 04:25:12,Incident Assignment Group,Incident: INC12230201,L3 Support Group,2026-04-08 04:25:12,2026-04-09 13:40:04,119692,TRUE
+2026-04-19 05:07:38,Incident Assignment Group,Incident: INC12230202,L3 Support Group,2026-04-19 05:07:38,2026-04-20 12:49:08,114090,TRUE
+2026-04-12 23:27:58,Incident Assignment Group,Incident: INC12230203,L3 Support Group,2026-04-12 23:27:58,,,FALSE
+2026-04-10 13:23:00,Incident Assignment Group,Incident: INC12230204,L3 Support Group,2026-04-10 13:23:00,,,FALSE
+2026-04-26 22:21:22,Incident Assignment Group,Incident: INC12230205,L3 Support Group,2026-04-26 22:21:22,,,FALSE
+2026-04-26 06:19:36,Incident Assignment Group,Incident: INC12230206,L3 Support Group,2026-04-26 06:19:36,,,FALSE
+2026-04-06 03:52:40,Incident Assignment Group,Incident: INC12230207,L3 Support Group,2026-04-06 03:52:40,,,FALSE
+2026-04-05 16:35:17,Incident Assignment Group,Incident: INC12230208,L3 Support Group,2026-04-05 16:35:17,2026-04-06 08:40:43,57926,TRUE
+2026-04-22 04:47:23,Incident Assignment Group,Incident: INC12230209,L3 Support Group,2026-04-22 04:47:23,,,FALSE
+2026-04-04 14:31:00,Incident Assignment Group,Incident: INC12230210,L3 Support Group,2026-04-04 14:31:00,,,FALSE
+2026-04-12 05:13:09,Incident Assignment Group,Incident: INC12230211,L3 Support Group,2026-04-12 05:13:09,,,FALSE
+2026-04-07 06:44:09,Incident Assignment Group,Incident: INC12230212,L3 Support Group,2026-04-07 06:44:09,2026-04-10 00:37:22,237193,TRUE
+2026-04-11 07:19:18,Incident Assignment Group,Incident: INC12230213,L3 Support Group,2026-04-11 07:19:18,,,FALSE
+2026-04-25 03:22:21,Incident Assignment Group,Incident: INC12230214,L3 Support Group,2026-04-25 03:22:21,,,FALSE
+2026-04-15 21:03:22,Incident Assignment Group,Incident: INC12230215,L3 Support Group,2026-04-15 21:03:22,2026-04-18 17:56:02,247960,TRUE
+2026-04-09 05:48:18,Incident Assignment Group,Incident: INC12230216,L3 Support Group,2026-04-09 05:48:18,2026-04-12 04:57:58,256180,TRUE
+2026-04-12 11:12:57,Incident Assignment Group,Incident: INC12230217,L3 Support Group,2026-04-12 11:12:57,2026-04-13 20:23:33,119436,TRUE
+2026-04-02 18:46:01,Incident Assignment Group,Incident: INC12230218,L3 Support Group,2026-04-02 18:46:01,2026-04-04 12:51:44,151543,TRUE
+2026-04-17 19:57:59,Incident Assignment Group,Incident: INC12230219,L3 Support Group,2026-04-17 19:57:59,2026-04-17 21:30:07,5528,TRUE
+2026-04-02 12:38:52,Incident Assignment Group,Incident: INC12230220,L3 Support Group,2026-04-02 12:38:52,2026-04-05 00:20:40,214908,TRUE
+2026-04-03 03:32:00,Incident Assignment Group,Incident: INC12230221,L3 Support Group,2026-04-03 03:32:00,2026-04-03 13:40:24,36504,TRUE
+2026-04-18 07:04:32,Incident Assignment Group,Incident: INC12230222,L3 Support Group,2026-04-18 07:04:32,2026-04-20 21:37:22,225170,TRUE
+2026-04-25 03:32:02,Incident Assignment Group,Incident: INC12230223,L3 Support Group,2026-04-25 03:32:02,2026-04-26 03:23:41,85899,TRUE
+2026-04-13 22:46:07,Incident Assignment Group,Incident: INC12230224,L3 Support Group,2026-04-13 22:46:07,2026-04-14 20:36:08,78601,TRUE
+2026-04-20 11:19:27,Incident Assignment Group,Incident: INC12230225,L3 Support Group,2026-04-20 11:19:27,2026-04-21 20:47:09,120462,TRUE
+2026-04-24 12:23:00,Incident Assignment Group,Incident: INC12230226,L3 Support Group,2026-04-24 12:23:00,,,FALSE
+2026-04-15 00:47:09,Incident Assignment Group,Incident: INC12230227,L3 Support Group,2026-04-15 00:47:09,,,FALSE
+2026-04-04 13:05:15,Incident Assignment Group,Incident: INC12230228,L3 Support Group,2026-04-04 13:05:15,2026-04-06 01:06:40,129685,TRUE
+2026-04-21 18:33:20,Incident Assignment Group,Incident: INC12230229,L3 Support Group,2026-04-21 18:33:20,,,FALSE
+2026-04-20 04:46:02,Incident Assignment Group,Incident: INC12230230,L3 Support Group,2026-04-20 04:46:02,2026-04-20 15:30:07,38645,TRUE
+2026-04-16 17:12:52,Incident Assignment Group,Incident: INC12230231,L3 Support Group,2026-04-16 17:12:52,2026-04-18 02:44:03,120671,TRUE
+2026-04-17 15:43:29,Incident Assignment Group,Incident: INC12230232,L3 Support Group,2026-04-17 15:43:29,2026-04-20 12:37:03,248014,TRUE
+2026-04-20 10:48:55,Incident Assignment Group,Incident: INC12230233,L3 Support Group,2026-04-20 10:48:55,2026-04-22 16:19:09,192614,TRUE
+2026-04-05 16:59:35,Incident Assignment Group,Incident: INC12230234,L3 Support Group,2026-04-05 16:59:35,,,FALSE
+2026-04-20 05:03:45,Incident Assignment Group,Incident: INC12230235,L3 Support Group,2026-04-20 05:03:45,2026-04-23 04:11:21,256056,TRUE
+2026-04-11 23:28:36,Incident Assignment Group,Incident: INC12230236,L3 Support Group,2026-04-11 23:28:36,2026-04-13 13:14:48,135972,TRUE
+2026-04-23 21:50:44,Incident Assignment Group,Incident: INC12230237,L3 Support Group,2026-04-23 21:50:44,2026-04-25 00:13:51,94987,TRUE
+2026-04-22 02:25:26,Incident Assignment Group,Incident: INC12230238,L3 Support Group,2026-04-22 02:25:26,2026-04-24 09:48:20,199374,TRUE
+2026-04-16 21:10:30,Incident Assignment Group,Incident: INC12230239,L3 Support Group,2026-04-16 21:10:30,2026-04-19 16:20:55,241825,TRUE
+2026-04-05 14:51:34,Incident Assignment Group,Incident: INC12230240,L3 Support Group,2026-04-05 14:51:34,2026-04-07 08:18:54,149240,TRUE
+2026-04-03 15:12:18,Incident Assignment Group,Incident: INC12230241,L3 Support Group,2026-04-03 15:12:18,,,FALSE
+2026-04-11 16:25:44,Incident Assignment Group,Incident: INC12230242,L3 Support Group,2026-04-11 16:25:44,2026-04-12 16:16:35,85851,TRUE
+2026-04-15 01:46:01,Incident Assignment Group,Incident: INC12230243,L3 Support Group,2026-04-15 01:46:01,2026-04-17 01:58:12,173531,TRUE
+2026-04-27 13:21:17,Incident Assignment Group,Incident: INC12230244,L3 Support Group,2026-04-27 13:21:17,2026-04-28 07:35:05,65628,TRUE
+2026-04-13 17:38:44,Incident Assignment Group,Incident: INC12230245,L3 Support Group,2026-04-13 17:38:44,,,FALSE
+2026-04-07 14:07:47,Incident Assignment Group,Incident: INC12230246,L3 Support Group,2026-04-07 14:07:47,2026-04-10 14:03:13,258926,TRUE
+2026-04-05 20:18:40,Incident Assignment Group,Incident: INC12230247,L3 Support Group,2026-04-05 20:18:40,,,FALSE
+2026-04-05 02:32:44,Incident Assignment Group,Incident: INC12230248,L3 Support Group,2026-04-05 02:32:44,2026-04-08 02:13:28,258044,TRUE
+2026-04-02 06:41:56,Incident Assignment Group,Incident: INC12230249,L3 Support Group,2026-04-02 06:41:56,,,FALSE
+2026-04-06 17:12:22,Incident Assignment Group,Incident: INC12230250,L3 Support Group,2026-04-06 17:12:22,2026-04-06 23:57:08,24286,TRUE
+2026-04-16 04:44:09,Incident Assignment Group,Incident: INC12230251,L3 Support Group,2026-04-16 04:44:09,2026-04-16 21:11:56,59267,TRUE
+2026-04-01 19:49:24,Incident Assignment Group,Incident: INC12230252,L3 Support Group,2026-04-01 19:49:24,2026-04-02 19:53:38,86654,TRUE
+2026-04-17 19:10:32,Incident Assignment Group,Incident: INC12230253,L3 Support Group,2026-04-17 19:10:32,,,FALSE
+2026-04-23 20:17:18,Incident Assignment Group,Incident: INC12230254,L3 Support Group,2026-04-23 20:17:18,,,FALSE

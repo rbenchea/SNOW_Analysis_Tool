@@ -1,0 +1,11 @@
+number;sys_created_on;short_description;priority;state;resolution_code;assignment_group;assigned_to;sys_updated_on;sys_updated_by
+PRB0001001;2026-04-01 00:00:00;Database deadlocks during concurrent stock updates for Flash Sale items;2 - High;3;Fix Applied;Problem Management;Admin User;2026-04-03 00:00:00;system_admin
+PRB0001002;2026-04-01 00:00:00;PDF Generation Service failing to map VAT rates for international addresses;2 - High;3;Fix Applied;Problem Management;Admin User;2026-04-03 00:00:00;system_admin
+PRB0001003;2026-04-01 00:00:00;Mismatch between cart Reservation timestamp and actual warehouse availability;2 - High;3;Fix Applied;Problem Management;Admin User;2026-04-03 00:00:00;system_admin
+PRB0001004;2026-04-01 00:00:00;408 Request Timeout during the final payment step due to unoptimized SQL queries.;1 - Critical;3;Fix Applied;Problem Management;Admin User;2026-04-03 00:00:00;system_admin
+PRB0001005;2026-04-01 00:00:00;Missing billing address fields in the API payload causing invoice generation to fail.;3 - Moderate;3;Fix Applied;Problem Management;Admin User;2026-04-03 00:00:00;system_admin
+PRB0001006;2026-04-01 00:00:00;Negative stock levels allowed due to lack of atomic operations in the cart update function;1 - Critical;3;Fix Applied;Problem Management;Admin User;2026-04-03 00:00:00;system_admin
+PRB0001007;2026-04-01 00:00:00;Incorrect currency conversion applied to VAT totals for non-Euro transactions ;2 - High;3;Fix Applied;Problem Management;Admin User;2026-04-03 00:00:00;system_admin
+PRB0001008;2026-04-01 00:00:00;User blocked at payment step because the checkout session ID was invalidated by a firewall rule.;2 - High;3;Fix Applied;Problem Management;Admin User;2026-04-03 00:00:00;system_admin
+PRB0001009;2026-04-01 00:00:00;Stock levels not synchronizing between the mobile app and web frontend due to a stale Redis cache.;2 - High;3;Fix Applied;Problem Management;Admin User;2026-04-03 00:00:00;system_admin
+PRB0001010;2026-04-01 00:00:00;Missing invoice template headers causing 500 errors in the billing export tool;1 - Critical;3;Fix Applied;Problem Management;Admin User;2026-04-03 00:00:00;system_admin
