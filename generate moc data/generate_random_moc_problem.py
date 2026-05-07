@@ -45,16 +45,16 @@ def get_problem_timestamp_map(incident_file, metric_file):
 
 def generate_problems_csv(incident_file=None, metric_file=None, output_file=None):
     # Setup output directory paths 
-    output_dir = Path(__file__).parent.parent / "output"
-    output_dir.mkdir(parents=True, exist_ok=True)
+    input_dir = Path(__file__).parent.parent / "input"
+    input_dir.mkdir(parents=True, exist_ok=True)
     
     # Set default paths to output folder
     if incident_file is None:
-        incident_file = output_dir / "incident.csv"
+        incident_file =  input_dir / "incident.csv"
     if metric_file is None:
-        metric_file = output_dir / "metric_instance.csv"
+        metric_file = input_dir / "metric_instance.csv"
     if output_file is None:
-        output_file = output_dir / "problems.csv"
+        output_file = input_dir / "problems.csv"
     
     # Convert to strings for file operations
     incident_file = str(incident_file)

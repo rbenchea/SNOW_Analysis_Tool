@@ -198,9 +198,11 @@ def create_visualizations(output_dir: Path, issue_trends: pd.DataFrame, total_ti
 
 def main():
     output_dir = Path(__file__).parent.parent / "output"
-    incident_path = output_dir / "incident.csv"
-    problems_path = output_dir / "problems.csv"
-    metric_path = output_dir / "metric_instance.csv"
+    input_dir = Path(__file__).parent.parent / "input"
+    incident_path = input_dir / "incident.csv"
+    problems_path = input_dir / "problems.csv"
+    metric_path = input_dir / "metric_instance.csv"
+
 
     incidents = load_incidents(incident_path)
     problems = load_problems(problems_path)

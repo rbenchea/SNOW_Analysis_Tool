@@ -6,15 +6,15 @@ from pathlib import Path
 
 def generate_incident_csv(input_file=None, problems_file=None, output_file=None):
     try:
-        output_dir = Path(__file__).parent.parent / "output"
-        output_dir.mkdir(parents=True, exist_ok=True)
+        input_dir = Path(__file__).parent.parent / "input"
+        input_dir.mkdir(parents=True, exist_ok=True)
         
         if input_file is None:
-            input_file = output_dir / "metric_instance.csv"
+            input_file = input_dir / "metric_instance.csv"
         if problems_file is None:
-            problems_file = output_dir / "problems.csv"
+            problems_file = input_dir / "problems.csv"
         if output_file is None:
-            output_file = output_dir / "incident.csv"
+            output_file = input_dir / "incident.csv"
         
         input_file = str(input_file)
         problems_file = str(problems_file)

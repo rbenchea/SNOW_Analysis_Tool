@@ -12,9 +12,9 @@ def generate_metrics_csv(filename="metric_instance.csv", num_rows=400):
     incident_ids = [f"Incident: INC{12220000 + i}" for i in range(start_id, start_id + num_rows)]
     
     # Save to output folder (go up two levels: generate moc data -> proiect_final_wantsome -> output)
-    output_dir = Path(__file__).parent.parent / "output"
-    output_dir.mkdir(parents=True, exist_ok=True)
-    filepath = output_dir / filename
+    input_dir = Path(__file__).parent.parent / "input"
+    input_dir.mkdir(parents=True, exist_ok=True)
+    filepath = input_dir / filename
     
     def get_random_date(year, month):
         start_date = datetime(year, month, 1)
