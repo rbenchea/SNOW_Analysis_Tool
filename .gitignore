@@ -7,3 +7,7 @@ __pycache__/
 .DS_Store
 # Ignore virtual environment directory
 .venv
+# Ignore input file
+.input/
+# Ignore output file
+.output
