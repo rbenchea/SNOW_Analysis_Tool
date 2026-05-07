@@ -40,7 +40,7 @@ A data analysis tool for ServiceNow (SNOW) incident management. Process CSV file
 1. Clone the repository:
    ```bash
    git clone <repository-url>
-   cd MyGitProject-
+   cd SNOW_Analysis_Tool
    ```
 
 2. Navigate to the project folder:
@@ -61,7 +61,7 @@ To use the application with sample data, generate mock data in this specific ord
 ```bash
 python "generate moc data/generate_random_moc_metrics.py"
 ```
-Creates `output/metric_instance.csv` with 400 sample metric records.
+Creates `input/metric_instance.csv` with 400 sample metric records.
 
 #### Step 2: Generate Problems
 ```bash
@@ -101,9 +101,9 @@ python data_analysis.py
 ```
 
 The script looks for CSV files in the `input/` folder:
-- `output/incident.csv`
-- `output/problems.csv`
-- `output/metric_instance.csv`
+- `input/incident.csv`
+- `input/problems.csv`
+- `input/metric_instance.csv`
 
 Outputs:
 - Console summary with statistics
