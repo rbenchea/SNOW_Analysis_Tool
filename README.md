@@ -67,13 +67,13 @@ Creates `output/metric_instance.csv` with 400 sample metric records.
 ```bash
 python "generate moc data/generate_random_moc_problem.py"
 ```
-Creates `output/problems.csv` with problem records linked to incidents. Requires both `incident.csv` and `metric_instance.csv`.
+Creates `input/problems.csv` with problem records linked to incidents. Requires both `incident.csv` and `metric_instance.csv`.
 
 #### Step 3: Generate Incidents
 ```bash
 python "generate moc data/genrate_moc_data_incident.py"
 ```
-Creates `output/incident.csv` with incidents linked to the metrics. Requires `metric_instance.csv` from Step 1.
+Creates `input/incident.csv` with incidents linked to the metrics. Requires `metric_instance.csv` from Step 1.
 
 
 
@@ -88,7 +88,7 @@ python "generate moc data/genrate_moc_data_incident.py"
 python data_analysis.py
 ```
 
-All generated files are automatically saved to the `output/` folder and ready for analysis.
+All generated files are automatically saved to the `input/` folder and ready for analysis.
 
 ### Usage
 
@@ -100,7 +100,7 @@ Run the analysis script with the default CSV files from the output folder:
 python data_analysis.py
 ```
 
-The script looks for CSV files in the `output/` folder:
+The script looks for CSV files in the `input/` folder:
 - `output/incident.csv`
 - `output/problems.csv`
 - `output/metric_instance.csv`
@@ -126,7 +126,7 @@ http://localhost:8000
 **Web Features:**
 - Upload incident CSV files directly via the web form
 - Or specify file paths on your machine
-- Automatically uses files from `output/` folder if available
+- Automatically uses files from `input/` folder if available
 - View generated visualizations in the browser
 - Download visualization images
 - Browse gallery of all generated visualizations at `/gallery`

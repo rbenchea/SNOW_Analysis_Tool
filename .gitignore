@@ -8,6 +8,6 @@ __pycache__/
 # Ignore virtual environment directory
 .venv
 # Ignore input file
-.input/
+input/
 # Ignore output file
-.output
+output/
